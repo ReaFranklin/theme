@@ -1,4 +1,3 @@
-    
 <!-- 
 Studmuffin -- By Ajey@Sugarsmack.net
         Coded for personal use. 
@@ -226,8 +225,8 @@ body	{	margin: 0px;
 
 #container	{	position: relative;
 				margin: -2px auto !important;
-				background:#e6e6e6 ;
-				width: 712px;
+				background:#e6e6e6;
+				width:550px;
 				overflow: hidden;
 				padding: 3px;
                 -moz-transition: 0.8s ease-in-out;
@@ -239,171 +238,10 @@ body	{	margin: 0px;
 			}
 
 
-#sidebar {  position: fixed;
-            width: 205px; 
-            margin-top: 0px;
-            margin-left: -2px;
-             padding: 3px;
-             height: 100%;
-                z-index: 999 !important;
-            }
-h1{
-margin-top:-8px;
-margin-left:85px;
-margin-bottom:2px;
-width:110px;
-height:9px;
-color:#fff;
-font-family:pixel;
-font-size:10px;
-padding:2px;
-padding-left:4px;
-line-height:8px;
-letter-spacing:1px;
-text-transform:uppercase;
-background:#ff66a8;
-border-top-right-radius: 4px;
-border-top-left-radius: 4px;}
-
-h8{
-margin-top:-8px;
-margin-left:57px;
-margin-bottom:2px;
-width:110px;
-height:9px;
-color:#fff;
-font-family:pixel;
-font-size:10px;
-padding:2px;
-padding-left:4px;
-line-height:8px;
-letter-spacing:1px;
-text-transform:uppercase;
-background:#e0c34c;
-border-top-right-radius: 4px;
-border-top-left-radius: 4px;}
-
-
-#sidebar img {  width: 195px !important; 
-                background:#CDCDCD;
-                padding: 5px; 
-                clear: both;
-                margin-bottom: 3px;
-                border-radius: 5px;
-                }
-
-
-    .box, .box2    {   background: #ddd;
-                margin: 3px 0px;
-                padding: 4px;
-                color:#595959;
-                -webkit-text-shadow: 0px 0px 2px #303030;
-                text-shadow: 0px 0px 0px ;
-                border-radius: 5px;
-            }
-            
-    .box2   {   width: 94px; position: relative; float: left;
-                margin-bottom: 6px;
-            }
- 
-    .box ul {   margin-left: 0;
-                padding-left: 0;
-                list-style-type: none;
-                }   
-    
-    .box ul li:nth-child(2n+1) { color: #595959; background: #ddd;}
-    .box ul li:nth-child(2n+2) { color: #4A4A4A;}
-    .box ul a { color:#3eacf0;}
-    .box ul qu { color:#ff66a8;}
-        h2, h3, h4, h5  {  
-                border-radius: 0px !important;
-                font-weight: normal;
-                padding: 1px !important;
-                text-align: center;
-                clear: both;
-                margin: 0px !important;
-                margin-bottom: 2px !important; 
-                border-radius: 5px !important;
-                -webkit-text-shadow: 0px 0px 2px transparent !important;
-                text-shadow: 0px 0px 2px   transparent !important;
-                border-bottom: 1px solid #ddd;
-                background:#e6e6e6;
-            }
-            
-        h2 {    color: #ff66a8 !important;}
-        h3 {    color: #e0c34c !important;}
-        h4 {    color: #72d65c !important;}
-        h5 {    color: #3eacf0 !important;}
-#navigate { margin-bottom: 3px; text-align: center;}
-
-
-#navigate a {   color: #303030; 
-                background:#cdcdcd;
-                display: inline-block;
-                letter-spacing: 1px;
-                padding: 5px 9.79px;
-                border-radius: 3px;
-            }
-   
-#navigate a:nth-child(4n+1) { color: #ff66a8;}
-#navigate a:nth-child(4n+2) { color: #e0c34c;}
-#navigate a:nth-child(4n+3) { color: #72d65c;}
-#navigate a:nth-child(4n+4) { color: #3eacf0;}         
-
-#navigate a:hover { color: #303030; background: #f3f3f3;
-}
-
-                                
-
-.favs {     position: relative; 
-            width: 98px;
-            float: left;
-}
-
-
-.favs a {   float: left; 
-            display: block;
-            padding: 0px 0.5px; 
-            background:#e6e6e6;
-             background-image: url(http://static.tumblr.com/lvxiwhj/id4n4gx8v/header.png);
-            color: #303030;
-            margin: 1.6px; text-align: center;
-            text-decoration: none; 
-            width: 18px; height: 18px;
-            border: 1px solid #303030;
-                -webkit-text-shadow: 0px 0px 0px transparent;
-            border-radius: 5px;
-                text-shadow: 0px 0px 0px  transparent;}
-
-
-.favs a span    {   position: relative; 
-                    top: 30%;}
-
-                     
-.favs a:nth-child(12n+1), .favs a:nth-child(12n+6), .favs a:nth-child(12n+11)  { background-color: #ff66a8;}
-.favs a:nth-child(12n+2), .favs a:nth-child(12n+7), .favs a:nth-child(12n+12) { background-color: #e0c34c;}
-.favs a:nth-child(12n+3), .favs a:nth-child(12n+8), .favs a:nth-child(12n+09) { background-color: #72d65c;}
-.favs a:nth-child(12n+4), .favs a:nth-child(12n+5), .favs a:nth-child(12n+10) { background-color: #3eacf0;} 
-
-.favs a:hover   {   background: #303030;
-                    -moz-transition: 0.8s ease-out;
-                    -webkit-transition: 0.8s ease-out;}  
-
-.favs a:nth-child(12n+1):hover, .favs a:nth-child(12n+6):hover, .favs a:nth-child(12n+11):hover   { color: #ff4fde;
-                                border-color: #ff4fde;}
-
-.favs a:nth-child(12n+2):hover, .favs a:nth-child(12n+7):hover, .favs a:nth-child(12n+12):hover{ color: #ffad4f;
-                                border-color: #ffad4f;}
-
-.favs a:nth-child(12n+3):hover, .favs a:nth-child(12n+8):hover, .favs a:nth-child(12n+09):hover{ color: #b7cc3f;
-                                border-color: #b7cc3f;}
-
-.favs a:nth-child(12n+4):hover, .favs a:nth-child(12n+5):hover, .favs a:nth-child(12n+10):hover { color: #3fccaf;
-                                border-color: #3fccaf;} 
 
 #banner{	position: fixed;
-            margin-left: 214px;
-            margin-top: 0px;
+            margin-left:25px;
+            margin-top: 20px;
 			width: 485px;
              min-height: 150;
 			padding: 5px;
@@ -412,7 +250,7 @@ border-top-left-radius: 4px;}
 			z-index: 999 !important;
                 border-radius: 5px;
 		}  
-		
+
 #banner img {   height: 150px;
                 width: 485px;
                 border-radius: 5px;
@@ -420,92 +258,24 @@ border-top-left-radius: 4px;}
             
 #behindbanner   {   position: fixed;
                     top: 0px;
-                    margin-left: 208px;
-                    width: 500px;
+                    margin-left:28px;
+                    width: 525px;
                     height: 100px;
                     background: #e6e6e6;
                     z-index: 9 !important;
 }
 
-/*----------------------- N A V I G A T I O N ---------------------*/
- 
-div#links{
-color: #9f9e9e;
-position:fixed;
-opacity:1;
-top:-1px;
-left: 760px;
-width: 130px;
-height:154px;
-margin: 1px 0px 0px 0px;
-padding:1px;
-background:#ddd;
-border-top-right-radius:30px;
-border-bottom-right-radius:30px;
--webkit-transition: all 0.8s ease;
--moz-transition: all 0.8s ease;
--o-transition: all 0.8s ease;
+#sidebar{
+    position:fixed;
+    top:160px;
 }
 
-div#links:hover{
-left: 816px;
--webkit-transition: all 0.8s ease;
--moz-transition: all 0.8s ease;
--o-transition: all 0.8s ease;
-}
-
-.linksho{
-display: block;
-position: relative;
-color:#999999;
-font-family: pixel;
-font-size: 10px;
-line-height: 15px;
-text-decoration: none;
-text-transform: lowercase;
-margin-top: 0px
-margin-right: 0px;
-top:-75px;
-left:25px;
-width:130px;
-letter-spacing: 3px;
-border-bottom: 2px solid #999999;
-text-align: center;
--webkit-transform: rotate(-270deg);
-}
-  
- 
- 
-a.navi1, a.navi2, a.navi3, a.navi4{
-display:block;
-font-family:pixel;
-color:#ddd;
-font-size:8px;
-line-height:18px;
-font-style: normal;
-background-color:#cdcdcd;
-text-align: center;
-margin-top:1px;
-margin-right:1px;
-text-transform:uppercase;
-padding:2px;
-font-weight: normal;
-width:70px;
-border-radius:5px;
--webkit-transition: all 0.4s ease-out;
-}
- 
-a.navi1:hover{background:#ff66a8; color:#fff; text-shadow: 1px 1px #aaa;}
-a.navi2:hover{background:#E0C34C; color:#fff; text-shadow: 1px 1px #aaa;}
-a.navi3:hover{background:#72D65C; color:#fff; text-shadow: 1px 1px #aaa;}
-a.navi4:hover{background:#3EACF0; color:#fff; text-shadow: 1px 1px #aaa;}
- 
 
 
 #content{	position: relative;
 			float: left;
-            margin-left: 208px;
-            margin-top: 165px;
+            margin-left:25px;
+            margin-top: 200px;
 			width: 610px;
                 min-height: 800px;
 			padding: 3px;
@@ -585,7 +355,7 @@ a.navi4:hover{background:#3EACF0; color:#fff; text-shadow: 1px 1px #aaa;}
                         -webkit-transition: 0.8s ease-out;
 }
 
-.reblog2 a { background: #ddd;
+.reblog2 a { background:#ddd;
                 color: #595959;
                 display: block;
             padding:4px 8px;
@@ -610,7 +380,17 @@ a.navi4:hover{background:#3EACF0; color:#fff; text-shadow: 1px 1px #aaa;}
             border-top-right-radius: 10px;
 }
 
-.reblog2 a:hover, .reblog4 a:hover { background:#f3f3f3; color: #bbb;}
+
+#post:nth-child(5n+5)  .reblog2 a:hover,
+#post:nth-child(5n+5)  .reblog4 a:hover{background-color: #fe4ed5 !important;;}   
+#post:nth-child(5n+4)  .reblog2 a:hover,
+#post:nth-child(5n+4)  .reblog4 a:hover{background-color: #ff8b71 !important;;}   
+#post:nth-child(5n+3)  .reblog2 a:hover,
+#post:nth-child(5n+3)  .reblog4 a:hover{background-color: #ccc557 !important;;}   
+#post:nth-child(5n+2)  .reblog2 a:hover,
+#post:nth-child(5n+2)  .reblog4 a:hover{background-color: #11bbcf !important;;}   
+#post:nth-child(5n+1)  .reblog2 a:hover,
+#post:nth-child(5n+1)  .reblog4 a:hover{background-color: #9f59ec !important;;} 
 
     .reblog3    {  width:  100%;
                    
@@ -734,103 +514,9 @@ st { color: #303030;}
             
         </div> 
          
-< 
-<div id="links">
- <div style="margin: 3px; padding:2px; border: 1px dashed #4c4d4c; background: #e6e6e6; border-top-right-radius:30px; border-bottom-right-radius:30px; height:145px">
+<div id ="">
 
-<a class="navi1" href="/">Refresh</a>
-<a class="navi2" href="/ask">Message</a>
-<a class="navi3" href="/">Link</a>
-<a class="navi4" href="/">Link</a>
-<a class="navi1" href="/">Link</a>
-<a class="navi2" href="http://candygirlthemes.tumblr.com/">Credit</a>
-
-<div class="linksho">Hover for links</div>
-</div><br></div> 
- 
-   
-
-         
-         
-    <div id="sidebar">
-    
-        <div id="navigate">
-            <a href="http://{name}.tumblr.com" title="home" alt="home">01</a>
-            <a href="http://{name}.tumblr.com/ask" title="ask" alt="ask">02</a>
-            <a href="http://{name}.tumblr.com/tagged/personal" title="personal" alt="personal">03</a>
-            <a href="http://{name}.tumblr.com/archive" title="archive" alt="archive">04</a>
-            <a href="http://{name}.tumblr.com/" title="" alt="">05</a>
-            <a href="http://{name}.tumblr.com/" title="" alt="">06</a>
-        </div>
-        <img src="{image:sidebar}" style="border-radius: 20px;">
-        <div class="box">
-        
-            <h1>Once upon a time...</h1>
-            
-            <div style="height: 50px; overflow: auto; margin: 3px 0px;">
-There was a princess by the name of <b>Zahrea</b>. She first met the world on <b>Oct 10</b>. In her castle that was hidden on a <b>Caribbean island</b>, she spent her days dreaming about being a <b>Hollywood</b> star. She was <b>friendly</b> & she had a love for <b>music</b> and <b>fashion</b> and her only wish was to find <b>true love</b>
-
-                </div>
-        </div>
-    
-        <div class="favs">
-            <a title="" href=""><span>01</span></a>
-            <a title="" href=""><span>02</span></a>
-            <a title="" href=""><span>03</span></a>
-            <a title="" href=""><span>04</span></a>
-            <a title="" href=""><span>05</span></a>
-            <a title="" href=""><span>06</span></a>
-            <a title="" href=""><span>07</span></a>
-            <a title="" href=""><span>08</span></a>
-            <a title="" href=""><span>09</span></a>
-            <a title="" href=""><span>10</span></a>
-            <a title="" href=""><span>11</span></a>
-            <a title="" href=""><span>12</span></a>
-            
-        <center>
-        <object style=" padding: 6px 10px; margin-top: 3px; background: #e6e6e6; border-radius: 5px;" type="application/x-shockwave-flash" data="http://flash-mp3-player.net/medias/player_mp3_multi.swf" width="76" height="20">
-    <param name="movie" value="http://flash-mp3-player.net/medias/player_mp3_multi.swf" />
-    <param name="bgcolor" value="#e6e6e6" />
-    <param name="FlashVars" value="mp3={text:songurl}&amp;width=80&amp;autoplay=0&amp;{block:ifautoplay}autoplay=1&amp;{/block:ifautoplay}height=20&amp;volume=75&amp;showslider=0&amp;loadingcolor=303030&amp;bgcolor1=e7e7e7&amp;bgcolor2=e7e7e7&amp;buttoncolor=595959&amp;buttonovercolor=B8CC44&amp;showlist=0&amp;showplaylistnumbers=0&amp;slidercolor1=FA90FE&amp;slidercolor2=FA90FE&amp;sliderovercolor=BC97E7&amp;" />
-</object></centeR>
-        </div>
-        <div class="box2" style="margin-left: 5px;">
-            <h3>Likes</h3>
-                <div style="height: 30px; overflow: auto; margin: 3px 0px; z-index: 999 !important;">
-singing makeup ariana grande html <b>flowers</b> vs justin bieber jewelry music bbw <b> forever21</b> beyonce pretty little liars dessert <b>nail polish</b> antm candles <b>gossip girls</b> puppies carrie diaries <b>seventeen</b> love culture california glitter lauren conrad philosophy
-                </div>
-            <h4>Hates</h4>
-                <div style="height: 30px; overflow: auto; margin: 3px 0px; z-index: 999 !important;">
-liars <b>ratchets</b> bugs <b>dirt</b> coconut <b>sports</b> animal abusers inaccurate grammar <b>missing out</b> hypocrites sports early mornings <b>sports</b> pushy boys reptiles <b>discrimination</b> bad breath
-               </div>
-        </div>
-        <div style="clear:both; margin-bottom: -4px;"></div>
-        
-        <div class="box" style="width: 125px; float: left;">
-        <h8>Some F.A.Qs</h8>
-                <div style="height: 40px; overflow: auto; margin: 3px 0px;"><ul>
-        <li><qu>Q:</qu> Check out my blog?</li>
-        <li><a>A:</a> Ofc sweetie</li>
-        <li><qu>Q:</qu> Follow back?</li>
-        <li><a>A:</a> Please don't ask this </li>
-        <li><qu>Q:</qu> Banner?</li>
-        <li><a>A:</a> <b>islandglow</b></li>
-        <li><qu>Q:</qu> Follow count</li>
-        <li><a>A:</a> x xxx and counting</li>
-        <li><qu>Q:</qu> previous url</li>
-        <li><a>A:</a> i use to be <b>girlysmooch</b></li>
-        </ul>
-        </div>
-</div>      
-        <div class="box2" style="width: 58px; margin-left: 5px; height: 56px;">
-        <h2>Stats</h2>
-        <st>4 </st> // <st>3486</st><br>
-        <st>Start:</st> blahblah<br>
-        <st>Best viewed in chrome</st>
-        </div>
-        <div style="background: url(http://static.tumblr.com/lvxiwhj/9X8n4yocq/strip.png) repeat-x center center; clear: both; width: 216px; min-height: 20px;"></div>
-   </div>
-    
+</div>
 
     
 	<div id="content">
@@ -1028,10 +714,7 @@ iframe  {   width: 150px !important;
     
     
 </div>
-
-<div style="position:fixed; bottom: 50px; left: 20px; background: #222; color: #505050 !important; font: 10px/8px pixel; letter-spacing: 1px; font-weight: normal !important; z-index: 99999 !important; padding: 3px; "><a href="http://sugarsmack.net" style="color: #e6e6e6" target="_blank">
-Theme Credit
-</a></div>
+</div>
 
 
 </body>

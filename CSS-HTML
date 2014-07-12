@@ -281,6 +281,42 @@ body	{	margin: 0px;
 			padding: 3px;
 		}    
         
+        
+        
+#navi{
+z-index:3;
+margin-top:147px;
+margin-left:69px;
+padding:0px;
+width:356px;
+height:19px;
+overflow:hidden;
+position:fixed;
+text-align:center;}
+
+a.navi1, a.navi2, a.navi3, a.navi4, a.navi5, a.navi6, a.navi7, a.navi8{
+display:inline-block;
+width:40px;
+height:19px;
+padding:2px;
+color: #f3f3f3;
+line-height:12px;
+font-size: 8px; 
+font-family:"04b24"; 
+text-align: center;
+margin-left:-2px;}
+a.navi1{background:#9f59ec;}
+a.navi2{background:#5a82e6;}
+a.navi3{background:#14b2d7;}
+a.navi4{background:#30c5ae;}
+a.navi5{background:#8ac572;}
+a.navi6{background:#d2c258;}
+a.navi7{background:#f18b8d;}
+a.navi8{background:#fc53d0;}
+a.navi1:hover, a.navi2:hover, a.navi3:hover, a.navi4:hover, a.navi5:hover, a.navi6:hover, a.navi7:hover, a.navi8:hover{color: #ffffff;}
+
+        
+        
                         
 #post   {   position: relative; 
             float: left;
@@ -288,7 +324,7 @@ body	{	margin: 0px;
 			background:#cdcdcd;
             padding: 4px;
             margin:4px;
-            margin-top: 1px;
+            margin-top: 9px;
             margin-left: 4px;
             overflow: hidden;
                         -moz-transition: 0.4s ease-in-out;
@@ -382,15 +418,15 @@ body	{	margin: 0px;
 
 
 #post:nth-child(5n+5)  .reblog2 a:hover,
-#post:nth-child(5n+5)  .reblog4 a:hover{background-color: #fe4ed5 !important;;}   
+#post:nth-child(5n+5)  .reblog4 a:hover{background-color: #f52298 !important;;}   
 #post:nth-child(5n+4)  .reblog2 a:hover,
-#post:nth-child(5n+4)  .reblog4 a:hover{background-color: #ff8b71 !important;;}   
+#post:nth-child(5n+4)  .reblog4 a:hover{background-color: #bbf23a !important;;}   
 #post:nth-child(5n+3)  .reblog2 a:hover,
-#post:nth-child(5n+3)  .reblog4 a:hover{background-color: #ccc557 !important;;}   
+#post:nth-child(5n+3)  .reblog4 a:hover{background-color: #32e3ba !important;;}   
 #post:nth-child(5n+2)  .reblog2 a:hover,
-#post:nth-child(5n+2)  .reblog4 a:hover{background-color: #11bbcf !important;;}   
+#post:nth-child(5n+2)  .reblog4 a:hover{background-color: #c43772 !important;;}   
 #post:nth-child(5n+1)  .reblog2 a:hover,
-#post:nth-child(5n+1)  .reblog4 a:hover{background-color: #9f59ec !important;;} 
+#post:nth-child(5n+1)  .reblog4 a:hover{background-color: #FF3300 !important;;} 
 
     .reblog3    {  width:  100%;
                    
@@ -514,12 +550,23 @@ st { color: #303030;}
             
         </div> 
          
-<div id ="">
+<div id ="container">
+<div id="navi">
+<a href="http://mintcrave.tumblr.com/" class="navi1">home</a>
+<a href="http://mintcrave.tumblr.com/ask" class="navi2">ask</a>
+<a href="http://mintcrave.tumblr.com/archive" class="navi3">archive</a>
+<a href="http://candythemes.net" class="navi4">theme</a>
+<a href="http://mintcrave.tumblr.com/tagged/answered" class="navi5">asked</a>
+<a href="http://mintcrave.tumblr.com/tagged/mine" class="navi6">mine</a>
+<a href="http://0bey-4mber.tumblr.com/" class="navi7">Burr</a>
+<a href="http://let0sexual.tumblr.com/" class="navi8">Katerz</a>
 
 </div>
-
+</div>
     
 	<div id="content">
+	
+
     
 {block:Posts}
 <div id="post">

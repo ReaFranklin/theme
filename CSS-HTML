@@ -1,24 +1,57 @@
-<!-- 
-Studmuffin -- By Ajey@Sugarsmack.net
-        Coded for personal use. 
-        Any redistribution is considered stealing. Editing and distributing counts as stealing. 
-        * Do not remove credits
-        * Edit to your liking
-        -->
-        
-        <html> <head>
-<title> {title}</title>
-<link rel="shortcut icon" href="http://static.tumblr.com/lvxiwhj/VOxn4ynwv/favicon.png">
+<html>
+    <head>
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+
+<script> 
+$(document).ready(function() { 
+// 
+$('a.poplight[href^=#]').click(function() { 
+var popID = $(this).attr('rel'); //Get Popup Name 
+var popURL = $(this).attr('href'); //Get Popup href to define size 
+var query= popURL.split('?'); 
+var dim= query[1].split('&'); 
+var popWidth = dim[0].split('=')[1]; //Gets the first query string value 
+$('#' + popID).fadeIn().css({ 'width': Number( popWidth ) }).prepend('<a href="#" class="close"><img src="http://i.imgur.com/FMfXkby.png" class="btn_close" title="Close" alt="Close" /></a>'); 
+var popMargTop = ($('#' + popID).height() + 80) / 2; 
+var popMargLeft = ($('#' + popID).width() + 80) / 2; 
+//Apply Margin to Popup 
+$('#' + popID).css({ 
+'margin-top' : -popMargTop,
+'margin-left' : -popMargLeft 
+}); 
+$('body').append('<div id="fade"></div>');
+$('#fade').css({'filter' : 'alpha(opacity=80)'}).fadeIn(); //Fade in the fade layer - .css({'filter' : 'alpha(opacity=80)'}) 
+return false; 
+}); 
+$('a.close, #fade').live('click', function() { 
+$('#fade , .popup_block').fadeOut(function() { 
+$('#fade, a.close').remove(); //fade them both out 
+}); 
+return false; 
+}); 
+}); 
+</script>
+
+<meta name="image:Sidebar" content=""/>
+<meta name="color:color1" content="#A7978A"/>
+<meta name="color:color2" content="#91AC99"/>
+<meta name="color:color3" content="#88C8B8"/>
+
+<link href="http://static.tumblr.com/jpkny6t/oaYmqysii/style-my-tooltips.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" 
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script> 
+
+
+    
+<title> GS // GIRLYSMOOCH</title>
+<img style="position:fixed; opacity: 1.0; width:auto; top:20px; left:900px; z-index: 999;" src="http://i.imgur.com/ht88A6d.png">
+
+<link rel="shortcut icon" href="http://media.tumblr.com/tumblr_lkl64bcmgs1qfamg6.gif">
 
 <meta name="image:Sidebar" content="1"/>
-<meta name="image:banner" content="1"/>
-<meta name="if:custombanner" content="1"/> 
-<meta name="text:sidebartitle" content="About me"/>
-<meta name="text:songurl" content="http://62.182.37.12/songs/The%20Pretty%20Reckless%20%E2%80%93%20Hit%20Me%20Like%20A%20Man.mp3"/>  
-<meta name="if:autoplay" content="1"/> 
-{block:Description} 
-<meta name="description" content="{MetaDescription}" />        
-{/block:Description}
+{block:Description} <meta name="description" content="{MetaDescription}" />        {/block:Description}
+
 <!-- Masonry//Scripts -->
 <SCRIPT TYPE="text/javascript">
 <!--
@@ -35,6 +68,11 @@ if (document.layers)
 else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
 document.oncontextmenu=new Function("return false")
 // -->
+
+
+
+
+
 </SCRIPT>
 
 
@@ -60,6 +98,7 @@ attribute:"title"
 });
 
 })(jQuery);
+
 </script>
 
 <script src='http://code.jquery.com/jquery-1.4.2.min.js' type='text/javascript'></script>
@@ -89,10 +128,12 @@ $wall.masonry({ appendedContent: $(newElements) });
 },500);
 setTimeout(function(){
 $(newElements).fadeIn('fast');
-},1400);
-},200);
+},1000);
+},300);
 });
 </script>
+ 
+ 
  
 <script>
 $.fn.imagesLoaded = function(callback){
@@ -116,7 +157,26 @@ this.src = src;}
 return this;};
 </script>
  
+
+ <!-- End of part 1 of  Masonry//Scripts -->
+ 
+
+ 
+ 
+ 
+ </head>
+
+
+<!-- LiteBrite//Opt1 - Theme by Sugarsmack.net
+        *credit removal is prohibited. 
+        *Theme is for personal use only. 
+        *Redistribution/use of any part of this theme is forbidden. 
+-->
+ 
+ 
 <style>
+
+
 .navigation{display:none;}
 
 .tumblrAutoPager_page_info, .tumblrAutoPager_page_separator{
@@ -134,7 +194,7 @@ margin:20px 0px 0px 20px;
 
 background-color:#e6e6e6; /* change the background color */
 
-border:1px solid #000; /* change the border color */
+border:1px solid #d3d3d3; /* change the border color */
 
 font-family:pixel; /* change the font */
 
@@ -143,7 +203,7 @@ font-size:10px; /* change the font size */
 
 text-transform:uppercase; /* can be uppercase, lowercase, none*/
 
-color:#f3f3f3; /* change the text color */
+color:#808080; /* change the text color */
 
 z-index:999999999999999999999999999999999999;
 letter-spacing: 1px;
@@ -156,214 +216,288 @@ letter-spacing: 1px;
                     src: local('Ernest'),
                     url('http://static.tumblr.com/lvxiwhj/z7Jmm2jwh/ernest.ttf');
                 }
- 
- 	@font-face {	font-family:'pixel2';
-					src: local('tinytots'),
-					url('http://sugarsmack.net/lyts/001/tinytots.ttf');
-				}
-
-               
-    @font-face {    font-family:'bling';
-                    src: local('Got That Bling NF'),
-            		url('http://static.tumblr.com/lvxiwhj/058mvvep2/got_that_bling_nf.ttf');
-				}
+                
+    @font-face {    font-family:'icon';
+                    src: local('Social Icons Pro Set 1 - Rounded'),
+                    url('http://gambyte.net/webstore/orders/seasidecutie/Social%20Icons%20Pro%20Set%201%20-%20Rounded.ttf');
+            	}
                           
 
-::-moz-selection{ background:#ddd;
-                     color:#AB989E;
+
+::-moz-selection{ background:#303030;
+                     color:#808080;
                 }
  
-::selection {background:#e6e6e6;
-                     color:#AB989E;
+::selection {background:#303030;
+                     color:#808080;
              }
 
-::-webkit-selection {background:#ddd;
-                     color:#AB989E;
+::-webkit-selection {background:#303030;
+                     color:#808080;
                     }
 
 
 ::-webkit-scrollbar {
 			width: 8px;
-			background: #e6e6e6;
+			background: #303030;
  			   }
 ::-webkit-scrollbar-thumb {
-    background-color:#cdcdcd;
-    border-top: 4px solid #bbb
-    border-bottom: 4px solid #bbb;
-    border-radius: 5px;
+           background: #eeeeee url(http://sugarsmack.net/themes/2013/litebrite/bg.png);
 }
 ::-webkit-scrollbar-corner {
-    background: #ddd;
+    background: #303030;
 }
 
-iframe#tumblr_controls { background-color: transparent;
-                            position: fixed; bottom: 0px;
+body,a{cursor:url(http://media.tumblr.com/tumblr_m2uly98meo1qfamg6.gif), progress;}
+
+a:hover{cursor:url(http://media.tumblr.com/tumblr_m2umq6MJdh1qfamg6.gif), progress;}
+
+iframe#tumblr_controls { background-color: trans;
+                            position: fixed; 
+                            bottom: 0px;
                             width: 350px !important;}
 
-a   {   text-decoration: none; color: #ccc;
+a   {   text-decoration: none; color: #aaa;
         -moz-transition: 0.8s ease-out;
         -webkit-transition: 0.8s ease-out;
     }
     
-a:hover {   color: #FF65FD;
+a:hover {   color: #fa9bac;
             -moz-transition: 0.8s ease-out;
             -webkit-transition: 0.8s ease-out;
         }
+.popup_block{
+overflow:hidden;
+display: none; /*--hidden by default--*/
+background-color:#fafafa;
+border:3px double #e5e5e5;
+font-size:10px;
+width:100%;
+padding:4px;
+font-size:10px/8px;
+font-family:pixel;
+position: fixed;
+top: 50%; left: 50%;
+z-index: 99999;
+/*--CSS3 Rounded Corners--*/
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;}
+
+img.btn_close {
+float:right;
+margin:0px 0px 0 0;}
+
+*html #fade {
+	position: absolute;
+}
+
+*html .popup_block {
+	position: absolute;
+}
+
 
 body	{	margin: 0px;
 			padding: 0px;
-			background: url(http://static.tumblr.com/lvxiwhj/hbFn45ete/bg2.png) repeat top center fixed;
+        background: #eee url(http://static.tumblr.com/72f73baffddb68decc9f3f770d1eb3ba/dbmfb1k/YHamwr729/tumblr_static_tumblr_mvja9fwmhj1sjwenro5_250.png);
+        background-position: top-left;
+        background-attachment: fixed;
 			font: 10px/8px pixel;
             font-weight: normal;
-            color:#eee;
+            color: #aaa;
             text-transform: lowercase;
-            overflow-x: hidden !important;
+            overflow-x: hidden;
 		}
 
 
 
 
-#container	{	position: relative;
-				margin: -2px auto !important;
-				background:#e6e6e6;
-				width:550px;
+
+#container	{	position: absolute;
+                margin-top: 10px;
+                left: 410px;
+				width: 463px;
 				overflow: hidden;
 				padding: 3px;
-                -moz-transition: 0.8s ease-in-out;
-                -webkit-transition: 0.8s ease-in-out;
-                border-bottom-right-radius: 10px;
-                border-bottom-left-radius: 10px;
-                border: 5px solid #e6e6e6;
-                border-top: 0px;
+                border: 1px solid #;
+                border-left: 5px solid #;
+                border-right: 3px solid #;
+                background:green;
+-moz-transition: 0.8s ease-in-out;
+                                -webkit-transition: 0.8s ease-in-out;
+                                 z-index:9999999!important;
+                                
+                
 			}
 
 
+.left {
+float:left;}
 
-#banner{	position: fixed;
-            margin-left:25px;
-            margin-top: 20px;
-			width: 485px;
-             min-height: 150;
-			padding: 5px;
-			background:#f3f3f3;
-			border: 2px solid #e6e6e6;
-			z-index: 999 !important;
-                border-radius: 5px;
-		}  
+.right {
+float: right;}
 
-#banner img {   height: 150px;
-                width: 485px;
-                border-radius: 5px;
-            }
-            
-#behindbanner   {   position: fixed;
-                    top: 0px;
-                    margin-left:28px;
-                    width: 525px;
-                    height: 100px;
-                    background: #e6e6e6;
-                    z-index: 9 !important;
+redd{
+color:#fa9bac;    
 }
+
+grn{
+color:#aaa;    
+}
+
+li{
+list-style-image:url('http://i.cubeupload.com/NEEcDZ.png');
+}
+
 
 #sidebar{
-    position:fixed;
-    top:160px;
+margin-top:12px;
+margin-left:240px;
+width:160px;
+height:100%;
+float:left;
+padding:4px;
+padding-left:5px;
+padding-top:5px;
+overflow:hidden;
+position:fixed;
+z-index:999;
+background-color: #f8f8f8;
+border:1px double #ececec;
+border-right:0px;
 }
+
+
+
+
+fieldset {
+background-color:#ebebeb; 
+border: 1px double #e6e6e6;
+padding-bottom:1px;
+font-family:pixel;
+font-size:10px;
+border-radius: 5px 5px 5px 5px;
+}
+
+
+a.exit {   display: block; float: left; width: 48%; margin-left: 2px;
+            margin-bottom: 1px; text-align: center;
+            color: #A1A1A1; background: #eee;}
+            
+            
+            
+
+a.f1, a.f1:link, a.f1:active, a.f1:visited,
+a.f2, a.f2:link, a.f2:active, a.f2:visited,
+a.f3, a.f3:link, a.f3:active, a.f3:visited,
+a.f4, a.f4:link, a.f4:active, a.f4:visited
+a.f5, a.f5:link, a.f5:active, a.f5:visited{
+display:inline-block; width:15px; height:15px; font-family:'pixel'; font-style: normal; font-size:10px; line-height:16px; letter-spacing:1px; margin-bottom:1px; margin:1px; padding:4px; background:#e6e6e6; border-bottom:2px solid #d3d3d3; -webkit-transition:all 0.5s ease-out; -moz-transition:all 0.5s ease-out; transition: all 0.5s ease-out; -webkit-border-top-left-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-bottomleft: 5px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
+
+a.f1, a.f1:link, a.f1:active, a.f1:visited{color:#ff78d9;}
+a.f2, a.f2:link, a.f2:active, a.f2:visited{color:#fa9bac;}
+a.f3, a.f3:link, a.f3:active, a.f3:visited{color:#fcafa7;}
+a.f4, a.f4:link, a.f4:active, a.f4:visited{color:#92d487;}
+a.f5, a.f5:link, a.f5:active, a.f5:visited{color:#ff78d9;}
+
+a.f1:hover{letter-spacing:1px; border-bottom:2px solid #ff78d9;}
+a.f2:hover{letter-spacing:1px; border-bottom:2px solid #fa9bac;}
+a.f3:hover{letter-spacing:1px; border-bottom:2px solid #fcafa7;}
+a.f4:hover{letter-spacing:1px; border-bottom:2px solid #92d487;}
+a.f5:hover{letter-spacing:1px; border-bottom:2px solid #ff78d9;}
+
+.faqs{
+margin-top:6px;
+padding:3px;
+background-color: #f5f5f5;
+border:1px solid #e5e5e5;}
+
+            
+
+a.exit:hover   {  color: #ddd; background: #303030;} 
+
+
+	
+				
+
+ 
+
+    	.nav1 a, .nav2 a, .nav3 a, .nav4 a, .nav5 a{ background: #e6e6e6;
+margin: 4px;
+display: block;
+float: left; 
+position: relative;
+font-family: pixel;
+font-size: 10px;
+line-height: 8px;
+text-decoration: none;
+text-transform: lowercase;
+color: #e6e6e6;
+width: 64px;
+margin-top: 4px;
+padding: 10px 3px;
+letter-spacing: 0px;
+
+-moz-transition: 0.8s ease-out;
+-webkit-transition: 0.8s ease-out;
+text-align: center;
+}
+
+.nav1 a {background: #92d487 !important;  }
+.nav2 a {background:#fa9bac !important; }
+.nav3 a {background:#fcafa7 !important; }
+.nav4 a {background:#ff78d9 !important; }
+.nav5 a {background:#92d487 !important; }
+
+
+			a.nav span, a.nav2 span, a.nav3 span, a.nav4 span	 {display: block;
+																	position: relative;
+																	top: 30%;
+
+
+																}
+.nav1 a:hover {background: #e3e3e3 !important; color: #92d487 !important; }
+.nav2 a:hover {background: #e3e3e3 !important; color: #fa9bac !important;}
+.nav3 a:hover {background: #e3e3e3 !important; color: #fcafa7 !important;}
+.nav4 a:hover {background: #e3e3e3 !important; color: #ff78d9 !important;}
+.nav5 a:hover {background: #e3e3e3 !important; color: #92d487 !important;}
 
 
 
 #content{	position: relative;
 			float: left;
-            margin-left:25px;
-            margin-top: 200px;
-			width: 610px;
+            margin-left:-5px;
+            margin-top:130px;
+			width: 480px;
+				background:pink;
                 min-height: 800px;
 			padding: 3px;
+              z-index: 777!important;
 		}    
         
-        
-        
-#navi{
-z-index:3;
-margin-top:147px;
-margin-left:69px;
-padding:0px;
-width:356px;
-height:19px;
+
+
+#post {
+float:left;
+margin:4px;
+line-height:8.5px;
+padding:4px;
+background-color:#ececec;
+border:1px double #ececec;
 overflow:hidden;
-position:fixed;
-text-align:center;}
+width:130px;
+opacity:1;
 
-a.navi1, a.navi2, a.navi3, a.navi4, a.navi5, a.navi6, a.navi7, a.navi8{
-display:inline-block;
-width:40px;
-height:19px;
-padding:2px;
-color: #f3f3f3;
-line-height:12px;
-font-size: 8px; 
-font-family:"04b24"; 
-text-align: center;
-margin-left:-2px;}
-a.navi1{background:#9f59ec;}
-a.navi2{background:#5a82e6;}
-a.navi3{background:#14b2d7;}
-a.navi4{background:#30c5ae;}
-a.navi5{background:#8ac572;}
-a.navi6{background:#d2c258;}
-a.navi7{background:#f18b8d;}
-a.navi8{background:#fc53d0;}
-a.navi1:hover, a.navi2:hover, a.navi3:hover, a.navi4:hover, a.navi5:hover, a.navi6:hover, a.navi7:hover, a.navi8:hover{color: #ffffff;}
-
-        
-        
-                        
-#post   {   position: relative; 
-            float: left;
-            width: 150px;
-			background:#cdcdcd;
-            padding: 4px;
-            margin:4px;
-            margin-top: 9px;
-            margin-left: 4px;
-            overflow: hidden;
-                        -moz-transition: 0.4s ease-in-out;
-                        -webkit-transition: 0.4s ease-in-out;
-            letter-spacing: 0px;
-{block:permalinkpage} 
-            padding-top: 10px;
-{/block:permalinkpage} 
-            border-radius: 5px;
 }
+
 
 {block:IndexPage} 
-#post img { max-width: 150px;
-        opacity: 1 !important;
-                    +filter: grayscale(0) !important;
-                    -webkit-filter: grayscale(0) !important;
-                    -moz-filter: grayscale(0) !important;
-                    transition: 0.8s ease-all;
-                        -moz-transition: 0.4s ease-in-out;
-                        -webkit-transition: 0.4s ease-in-out;
-            border-radius: 5px;
-}
-
-#post:hover .reblog2, #post:hover .reblog4 { 
-                        opacity: 1 !important;
-                        -moz-transition: 0.4s ease-in-out;
-                        -webkit-transition: 0.4s ease-in-out;
-}
-
-#post:hover .reblog2 { left: auto !important; right: 4px !important;
-                        -moz-transition: 0.4s ease-all;
-                        -webkit-transition: 0.4s ease-all;}
-#post:hover .reblog4 { right: auto !important; left: 4px !important;
-                        -moz-transition: 0.4s ease-in-out;
-                        -webkit-transition: 0.4s ease-in-out;}
+#post img { max-width: 137px;}
 {/block:IndexPage} 
 
+#post b, #post em, #post strong { letter-spacing: 2px; color: #808080;}
 
-        
+
 #post ul {
     list-style: none !important;
     margin: 0;
@@ -372,61 +506,98 @@ a.navi1:hover, a.navi2:hover, a.navi3:hover, a.navi4:hover, a.navi5:hover, a.nav
 }
 
 #post .odd {
-    background: #303030; 
+    background: #d3d3d3; 
     font: 10px/8px pixel; letter-spacing: 0px;
-    color: #595959;
+    color: #808080;
 }
-#post .even {    color: #595959;}
+#post .even {    color: #aa;}
 
-#post .odd b  { color: #B1C53D;
-    font: 10px/8px pixel; letter-spacing: 0px;
-}
- #post .even b { color: #F8A84D;}
-
-.reblog2 { position: absolute; 
-            right: -24px; top: 4px;
-            opacity: 0 !important;
-            z-index: 8 !important;
-                        -moz-transition: 0.8s ease-out;
-                        -webkit-transition: 0.8s ease-out;
-}
-
-.reblog2 a { background:#ddd;
-                color: #595959;
-                display: block;
-            padding:4px 8px;
-            border-bottom-left-radius: 10px;
+#post .odd b, #post .even b { color: #303030 !important;
+    font: 10px/8px pixel; letter-spacing: 2px;
 }
 
 
 
+.reblog2 {   position: absolute;
+            top: 10px; width: 40px;
+            left: 90px;
+            text-align: center !important;
+            -moz-transition: 0.8s ease-out;
+            -webkit-transition: 0.8s ease-out;
+            color: #808080;
+            opacity: 0;
 
-.reblog4 { position: absolute; 
-            left: -24px; bottom: 3px;
-            opacity: 0 !important;
-            z-index: 8 !important;
-                        -moz-transition: 0.8s ease-out;
-                        -webkit-transition: 0.8s ease-out;
 }
 
-.reblog4 a { background: #ddd;
-                color: #595959;
-                display: block;
-            padding:4px 8px;
-            border-top-right-radius: 10px;
+
+.reblog4 {   position: absolute;
+            top: 10px; width: 40px;
+            text-align: center !important;
+            left: 10px;
+            -moz-transition: 0.8s ease-out;
+            -webkit-transition: 0.8s ease-out;
+            color: #808080;
+            opacity: 0;
+
 }
+
+
+ .reblog2 a, .reblog4 a { padding:  3px; display: block;
+background: #e3e3e3; 
+}  
+
+
+#post:nth-child(5n+5)  .reblog2 a,
+#post:nth-child(5n+5)  .reblog4 a{color: #92d487 !important;;}   
+#post:nth-child(5n+4)  .reblog2 a,
+#post:nth-child(5n+4)  .reblog4 a{color: #fa9bac !important;;}   
+#post:nth-child(5n+3)  .reblog2 a,
+#post:nth-child(5n+3)  .reblog4 a{color: #fcafa7 !important;;}   
+#post:nth-child(5n+2)  .reblog2 a,
+#post:nth-child(5n+2)  .reblog4 a{color: #ff78d9 !important;;}   
+#post:nth-child(5n+1)  .reblog2 a,
+#post:nth-child(5n+1)  .reblog4 a{color: #92d487 !important;;}   
+   
+
+
+
+#post:hover .reblog2 {   position: absolute; 
+                        top: 10px;
+                        left: 90px;
+                        z-index: 9 !important;
+                        opacity: 1 !important;
+                        padding-top: 0px !important;
+                        }
+                        
+                        
+#post:hover .reblog4 {   position: absolute; 
+                        top: 10px;
+                        left: 10px;
+                        z-index: 9 !important;
+                        opacity: 1 !important;
+                        ppadding-top: 0px !important;
+                        }
+
+
+#post .reblog2 a:hover, #post .reblog4 a:hover {color: #303030 !important; background: #7ea5bd;} 
+
+ .reblog2  a span    {   position: relative; top: 30%; }            
 
 
 #post:nth-child(5n+5)  .reblog2 a:hover,
-#post:nth-child(5n+5)  .reblog4 a:hover{background-color: #f52298 !important;;}   
+#post:nth-child(5n+5)  .reblog4 a:hover {background: #92d487 !important;;}   
 #post:nth-child(5n+4)  .reblog2 a:hover,
-#post:nth-child(5n+4)  .reblog4 a:hover{background-color: #bbf23a !important;;}   
+#post:nth-child(5n+4)  .reblog4 a:hover{background: #fa9bac !important;;}   
 #post:nth-child(5n+3)  .reblog2 a:hover,
-#post:nth-child(5n+3)  .reblog4 a:hover{background-color: #32e3ba !important;;}   
+#post:nth-child(5n+3)  .reblog4 a:hover{background: #fcafa7 !important;;}   
 #post:nth-child(5n+2)  .reblog2 a:hover,
-#post:nth-child(5n+2)  .reblog4 a:hover{background-color: #c43772 !important;;}   
+#post:nth-child(5n+2)  .reblog4 a:hover{background: #ff78d9 !important;;}   
 #post:nth-child(5n+1)  .reblog2 a:hover,
-#post:nth-child(5n+1)  .reblog4 a:hover{background-color: #FF3300 !important;;} 
+#post:nth-child(5n+1)  .reblog4 a:hover{background: #92d487 !important;;}   
+   
+
+
+
 
     .reblog3    {  width:  100%;
                    
@@ -440,15 +611,37 @@ a.navi1:hover, a.navi2:hover, a.navi3:hover, a.navi4:hover, a.navi5:hover, a.nav
             color: #808080;
             
                 
+    }
+  
+ .reblog3 a {padding: 5px 5px; display: block; float: right; margin: 5px; margin-bottom: 0px; color: #A1A1A1; background: #d3d3d3; } 
+ 
+ .reblog3 a:hover {color: #303030 !important;}
+ 
+#post:nth-child(5n+5) .reblog3 a:hover {background: #92d487;}   
+#post:nth-child(5n+4) .reblog3 a:hover {background: #fa9bac;}   
+#post:nth-child(5n+3) .reblog3 a:hover {background: #fcafa7;}   
+#post:nth-child(5n+2) .reblog3 a:hover {background: #ff78d9;}   
+#post:nth-child(5n+1) .reblog3 a:hover {background: #92d487;}   
+
+
+h1, h2, h3, h4  {   font-weight:  normal !important;
+        line-height: 8px;
+        font-size: 10px;
+        padding:  3px;
+        margin: 0px;
         
 }
 
-#post h2 { background: #f3f3f3; color: #222 !important;
-                -webkit-text-shadow: 0px 0px 2px transparent;
-                text-shadow: 0px 0px 2px  transparent; text-align: right;
-                padding-right: 4px !important;}
 
-#sidebar h2 { color: #808080; font: 10px/8px pixel; padding: 0px; border-top-right-radius: 10px; margin: 2px; display: block;}
+h2  {   background:#eee; padding: 1px; font-size:10pt; border-left:3px solid #ff78d9; border-right:3px solid #ff78d9; line-height:15pt;font-style:italic; text-indent:2px;color:#ff78d9; text-transform:lowercase; font-family:courier new !important; font-style:normal; font-weight:normal; }
+
+#sidebar h3  {   background:#fcafa7; padding: 1px; color: #303030; font: pixel !important;  clear: both; margin-top: 4px; margin-bottom: 4px; padding-left: 3px; text-indent:5px;    }
+
+
+
+
+
+
 
 
 
@@ -456,117 +649,120 @@ a.navi1:hover, a.navi2:hover, a.navi3:hover, a.navi4:hover, a.navi5:hover, a.nav
 
 .reblog2, .reblog4 .reblog3   {display:  none;}
 
+
 #post   {   position: relative;
             float: left;
-            width: 490px;
+            width: 470px;
             padding: 0px;
-            margin: 4px;  
+            margin: 0px;
+            margin-left: 0px;  
             overflow: auto;
             -moz-transition: 0.8s ease-out;
             -webkit-transition: 0.8s ease-out;
             border: 0px transparent;
-            color: #808080;
+            background: #eee;
 }
 
-#post img {         opacity: 1 !important;
-                }
+
 {/block:PermalinkPage} 
 
+
 b, strong   {font-weight: normal; font-size: 10px;}
-
-
-  
-b:nth-child(4n+1) { color: #ff66a8;}
-b:nth-child(4n+2) { color: #f07d30;}
-b:nth-child(4n+3) { color: #72d65c;}
-b:nth-child(4n+4) { color: #3eacf0;}      
-
+        b:nth-child(5n+5)  {color: #ff78d9 !important;}   
+        b:nth-child(5n+4) {color: #fa9bac !important;}   
+        b:nth-child(5n+3) {color: #fcafa7 !important;}   
+        b:nth-child(5n+2) {color: #ff78d9 !important;}   
+        b:nth-child(5n+1)  {color: #92d487 !important;}  
         
-         .reblog3 b {   color: #aaa;}
+bugg{
+color:#fa9bac;    
+}      
+        
+         .reblog3 b {   color: #FF0451;}
 
 
- blockquote  {  width: 80%;
-                background: #e6e6e6;
-                color: #606060;
+ blockquote  {  width: 90%;
+                border: 1px solid #e6e6e6;
+                background:#f8f8f8;
+                color: #777;
                 margin: 0 auto;
                 padding: 4px;
                 margin-top: -5px;
                 margin-bottom: 5px;
                     -moz-transition: 0.8s ease-out;
-                border-radius: 5px;
             -webkit-transition: 0.8s ease-out;}
-            
+
+#post:nth-child(5n+5)  blockquote {color: #92d487 !important;}   
+#post:nth-child(5n+4)  blockquote {color: #fa9bac !important;}   
+#post:nth-child(5n+3)  blockquote {color: #fcafa7 !important;}   
+#post:nth-child(5n+2)  blockquote {color: #ff78d9 !important;}   
+#post:nth-child(5n+1)  blockquote {color:#fa9bac !important;}   
+
             blockquote img  {width: 98%;}
+            blockquote a:hover  {color: #ddd;}
  
 {block:PermalinkPage} 
-blockquote { clear:both; margin: 5px; width: 60%;}
+blockquote { clear:both; margin: 5px; width: 300px;}
 {/block:PermalinkPage} 
-.ask    {   background: #e6e6e6;
+.ask    {   background:#e6e6e6;
+            border-left: 3px solid #7ea5bd;
+            border-right: 3px solid #7ea5bd;
             margin: 3px;
-            margin-top: 6px;
             padding: 3px;
-            color: #454545;
+            color: #606060;
             letter-spacing: 0px;
             position: relative;
-            padding: 4px;
+            overflow: hidden;
             padding-top: 3px;
-            padding-bottom: 10px;
+            padding-bottom: 2px;
             font: 10px/8px pixel;
-             overflow: hidden;
-             border-bottom: 3px double #B8CC44;
-            border-radius: 5px;
 }
 
-.ask a  {   color: #F8A84D; font-size: 10px; letter-spacing: 0px; margin-bottom: 3px;}
+#post:nth-child(5n+5)  .ask {border-color: #92d487 !important;}   
+#post:nth-child(5n+4)  .ask {border-color: #fa9bac !important;}   
+#post:nth-child(5n+3)  .ask {border-color: #fcafa7 !important;}   
+#post:nth-child(5n+2)  .ask {border-color: #ff78d9 !important;}   
+#post:nth-child(5n+1)  .ask {border-color: #92d487 !important;}   
 
-.ask a:hover { color: #F74CD7;}
+
+
+.ask a  {   color: #92d487; font-size: 10px; letter-spacing: 0px; margin-bottom: 3px;}
+
+#post:nth-child(5n+5)  .ask a {color: #92d487 !important;}   
+#post:nth-child(5n+4)  .ask a {color: #fa9bac !important;}   
+#post:nth-child(5n+3)  .ask a {color: #fcafa7 !important;}   
+#post:nth-child(5n+2)  .ask a {color: #ff78d9 !important;}   
+#post:nth-child(5n+1)  .ask a {color: #92d487 !important;}  
+
+#post .ask a:hover { color: #dddddd !important;}
               
-.ask img    {position: relative; float: left; border: 2px solid #000;  padding: 1px; padding-top: -9px !important; opacity: 1 !important; z-index: 8 !important; border-radius: 10px; }
+.ask img    {border: 2px solid #e6e6e6; float: left; padding: 1px; padding-top: -6px !important; border-radius: 10px; opacity: 1 !important;
+                background: #d3d3d3; }
 
-#answerdate {color: #F8A84D;}
+#post:nth-child(5n+5)  .ask img {border-color: #92d487 !important;}   
+#post:nth-child(5n+4)  .ask img {border-color: #fa9bac !important;}   
+#post:nth-child(5n+3)  .ask img {border-color: #fcafa7 !important;}   
+#post:nth-child(5n+2)  .ask img {border-color: #ff78d9 !important;}   
+#post:nth-child(5n+1)  .ask img {border-color: #92d487 !important;}  
 
-.ask b { color: #F8A84D;}
-
-st { color: #303030;}
 
 </style>
-
 
 
     <body>
-    <div id="bottom"></div>
-
-        <div id="container">
-    <div id="behindbanner"></div>
-        
-        <div id="banner">
-        <img src="http://static.tumblr.com/lvxiwhj/e6in4yobh/banner.png" id="banimage">
-{block:ifcustombanner} 
-<style>
-    #banimage { display: none;}
-</style>
-        <img src="{image:banner}">
-        {/block:ifcustombanner}
-            
-        </div> 
-         
-<div id ="container">
-<div id="navi">
-<a href="http://mintcrave.tumblr.com/" class="navi1">home</a>
-<a href="http://mintcrave.tumblr.com/ask" class="navi2">ask</a>
-<a href="http://mintcrave.tumblr.com/archive" class="navi3">archive</a>
-<a href="http://candythemes.net" class="navi4">theme</a>
-<a href="http://mintcrave.tumblr.com/tagged/answered" class="navi5">asked</a>
-<a href="http://mintcrave.tumblr.com/tagged/mine" class="navi6">mine</a>
-<a href="http://0bey-4mber.tumblr.com/" class="navi7">Burr</a>
-<a href="http://let0sexual.tumblr.com/" class="navi8">Katerz</a>
-
-</div>
-</div>
     
-	<div id="content">
-	
 
+
+    
+
+    <div id="sidebar">
+ 
+bjjb
+</div>
+
+<div id="container">
+ 
+	<div id="content">
     
 {block:Posts}
 <div id="post">
@@ -575,17 +771,20 @@ st { color: #303030;}
 {block:Photo}
 {block:IndexPage} 
 <div class="reblog2">
-<a href="{Permalink}">Reblog</a>
+<center>
+<a href="{Permalink}"><span>{NoteCount}</span></a>
 </div>
 <div class="reblog4">
-<a href="{Permalink}">{notecountwithlabel}</a>
+<center>
+<a target="_blank" href="{ReblogUrl}"><span>Reblog</span></a> 
+</center>
 </div>
-<img src="{PhotoURL-250}" alt="{PhotoAlt}"/>
+<img src="{PhotoURL-250}" style="width: 130px;" alt="{PhotoAlt}"/>
 {/block:IndexPage} 
 
 {block:PermalinkPage} 
 <center>
-<img src="{PhotoURL-400}"></center>
+<img src="{PhotoURL-250}"></center>
 <br>
 </center>
 {/block:PermalinkPage} 
@@ -593,19 +792,24 @@ st { color: #303030;}
 {/block:Photo}
  
  
+ 
 {block:Photoset}   
-
+{block:IndexPage} 
 <div class="reblog2">
-<a href="{Permalink}">Reblog</a>
+<center>
+<a href="{Permalink}"><span>{NoteCount}</span></a>
 </div>
 <div class="reblog4">
-<a href="{Permalink}">{notecountwithlabel}</a>
+<center>
+<a target="_blank" href="{ReblogUrl}"><span>Reblog</span></a> 
+</center>
 </div>
 
                  {block:Photos}
-                <img src="{PhotoURL-250}" style="width: 75px; float: left;">
+                <img src="{PhotoURL-250}" style="width: 68.5px; float: left;">
                  {/block:Photos}
- {/block:IndexPage} 
+
+{/block:IndexPage} 
 
 {block:PermalinkPage} 
 <center>
@@ -615,6 +819,8 @@ st { color: #303030;}
 
 
 {/block:PermalinkPage} 
+
+
 {/block:Photoset}
 
 
@@ -665,9 +871,10 @@ st { color: #303030;}
 
 {block:Audio} 
 <style>
-.soundcloud_audio_player {width: 250px !important;}
+.soundcloud_audio_player {width: 130px !important;}
 
-iframe  {   width: 150px !important;
+iframe  {   width: 130px !important;
+            opacity: 0.4;
             margin: 0px;
             margin-bottom: 3px;
             padding: 0px;}
@@ -712,10 +919,10 @@ iframe  {   width: 150px !important;
 
 {block:Quote}
 
-<b style=" color: #F8A84D; font-size: 18px; font-weight: normal;font-family: caleb;">"</b>
-<i style=" color: #f3f3f3 !important;font-size: 20px; line-height: 16px; font-family: caleb; letter-spacing: 0px;">{Quote}</i>
-<b style="color: #F8A84D; font-size: 18px; font-weight: normal;font-family: arial;">"</b><br /><br />
-{block:Source}<span class="quotesource" style="padding: 0px;float: right; width: 150px; display: block; text-align: right; color: #B1C53D;">{Source}</span>{/block:Source}
+<b style=" color:#ff78d9 !important; font-size: 14px; font-weight: normal;font-family: caleb;">"</b>
+<i style=" color: #808080;font-size: 20px; line-height: 16px; font-family: caleb; letter-spacing: 0px;">{Quote}</i>
+<b style="color: #303030 !important;  font-size: 14px;font-weight: normal;font-family: arial;">"</b><br /><br />
+{block:Source}<span class="quotesource" style="padding: 0px;float: right; width: 150px; display: block; text-align: right; color: #303030;">{Source}</span>{/block:Source}
 <div style="clear:both; margin-bottom: 3px;"></div>
 <center>  {block:IndexPage} 
  <div class="reblog3">
@@ -730,14 +937,13 @@ iframe  {   width: 150px !important;
 
 {block:Answer}
 <div class="ask">
-<img src="{AskerPortraitURL-16}" style="position: relative; margin: 1px; float: left;  ">
+<img src="{AskerPortraitURL-16}" style="position: relative; margin: 2px; float: left;  ">
 <a>{Asker}:</a> {Question}
 </div>    
 <div style="clear:both; margin-bottom: 3px; "></div>
-<div style="color: #303030; font: 8px/9px pixel2;">
-{Answer}</div>
- <div class="reblog3" style="background: #e6e6e6 !important;" id="answerdate">
-<b  style="font: 10px/8px pixel; letter-spacing: 0px;">Answered: {block:Date}{Month} {DayofMonth}, {Year} {/block:Date}</b>
+{Answer}
+ <div class="reblog3" style="background: #d3d3d3; color: #658da8 !important;" id="answerdate">
+<b  style="font: 10px/8px pixel; letter-spacing: 0px; color: #303030 !important;">Answered: {block:Date}{Month} {DayOfMonth}, {Year} {/block:Date}</b>
 </div>
 {/block:Answer}
 
@@ -758,10 +964,51 @@ iframe  {   width: 150px !important;
 {/block:Posts}
 	</div>
     
-    
-    
+
+
 </div>
-</div>
+
+
+
+
 
 
 </body>
+
+
+
+<div id="more" class="popup_block">
+
+<div class="left">
+<a href="/blogroll"> <l>></b><b>></b>Blogroll</a>
+<br>
+<a href="http://www.soundcloud.com/rearose/"> <b>></b><b>></b>Soundcloud</a>
+<br>
+<a href="/tagged/personal"><b>></b><b>></b>Personal</a>
+<br>
+<a href="/tagged/makeup"> <b>></b><b>></b>Makeup</a>
+</div>
+<div class="right">
+<a href="/networks"><b>></b><b>></b>Networks</a>
+<br>
+<a href="/tagged/justin"><b>></b><b>></b>my hubbiee</a>
+<br>
+<a href="/beautygurus"><b>></b><b>></b>Beauty Gurus</a>
+<br>
+<a href="/tagged/ariana"><b>></b><b>></b>Ariana Grande</a>
+</div></div>
+
+
+<div id="tellme" class="popup_block">
+<h4>Send me messages cuties!</h4>
+<iframe frameborder="0" scrolling="no" width="350px" height="250" src="http://www.tumblr.com/ask_form/girlysmooch.tumblr.com" style="background-color:transparent; overflow:hidden;" id="ask_form">
+
+
+
+</div>
+
+<div style="z-index:99999; position:fixed; top:580px; left:15px; opacity:.2; margin-left:0px;-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%);">
+<a href="http://thebestgirlseverr.tumblr.com/"><img src="http://i.imgur.com/oyaPZcE.png" height=45></a>
+</div>
+
+</html>

@@ -142,7 +142,7 @@ a:hover{cursor:url(http://img69.imageshack.us/img69/7673/cursorw.png), progress;
 body {
 margin:0px;
 background-color:#e8e8e8;
-background-image:url(http://static.tumblr.com/lvxiwhj/hbFn45ete/bg2.png);
+background-image:url(http://static.tumblr.com/lvxiwhj/XIZn4yl18/bg.png);
 color:#484848;
 background-attachment: fixed;
 background-repeat: repeat;
@@ -184,7 +184,7 @@ width:460px;
 overflow:hidden;
 margin:0px auto;
 min-height:900px;
-background:#eee;
+background:#1b1b1b;
 margin-left:450px;
 margin-top:200px;
 z-index: 99;
@@ -212,65 +212,66 @@ width: 150px;
 height:100%;
 margin: 1px 0px 0px 0px;
 padding:1px;
-background: white;
+background:#1b1b1b;
 z-index:99999;
 -webkit-transition: all 0.7s ease;
 -moz-transition: all 0.7s ease;
 -o-transition: all 0.7s ease;
 }
+
+
+#sidebar fieldset {  background: #1b1b1b; 
+                border: 0px; 
+                color: #4444444;
+                margin-top: 20px !important; 
+                border-bottom: 4px solid #ddd; 
+                position: relative; margin: 5px;
+                padding-bottom: 12px; }
+                
+                
+#sidebar fieldset legend {   font-family:pixel;
+color: #444444;
+text-shadow:0px 0px 1px #eee;
+font-weight: normal;
+border-top-right-radius:10px;
+font-style:normal;
+letter-spacing: 3px;
+font-size: 8px;
+text-align: left;
+line-height: 8px;
+padding-left: 8px;
+padding-top:1px;
+background:#c1db40;
+margin:1px;
+margin-bottom:2px;} 
  
-.fave1, .fave2, .fave3, .fave4{
-background: #e1e1e1;
-display:inline-block;
-width:16px;
-height:16px;
-line-height:16px;
-margin:0px;
-margin-top:3px;
-padding:1px;
-text-align: center;
-border: 1px solid #d3d3d3;
-border-radius:5px;
-transition: all 0.8s ease-out;
-}
- 
-.fave1:hover{color: #aaced5; background: #aaced5; border-radius: 30px;transition: all 0.5s ease-out;
--o-transition-transition: all 0.8s ease-out;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
--webkit-transform: rotate(360deg);
--moz-transform: rotate(360deg);
--o-transform: rotate(360deg);
--ms-transform: rotate(360deg);
-transform:rotate(360DEG);}
-.fave2:hover{color: #b8aeb1; background: #b8aeb1; border-radius: 30px;transition: all 0.5s ease-out;
--o-transition-transition: all 0.8s ease-out;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
--webkit-transform: rotate(360deg);
--moz-transform: rotate(360deg);
--o-transform: rotate(360deg);
--ms-transform: rotate(360deg);
-transform:rotate(360DEG);}
-.fave3:hover{color: #d97ea5; background: #d97ea5; border-radius: 30px;transition: all 0.5s ease-out;
--o-transition-transition: all 0.8s ease-out;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
--webkit-transform: rotate(360deg);
--moz-transform: rotate(360deg);
--o-transform: rotate(360deg);
--ms-transform: rotate(360deg);
-transform:rotate(360DEG);}
-.fave4:hover{color: #846870; background: #846870; border-radius: 30px;transition: all 0.5s ease-out;
--o-transition-transition: all 0.8s ease-out;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
--webkit-transform: rotate(360deg);
--moz-transform: rotate(360deg);
--o-transform: rotate(360deg);
--ms-transform: rotate(360deg);
-transform:rotate(360DEG);}
- 
+.favs {     position: relative; }
+
+
+.favs a {   float: left; 
+            display: block;
+            padding: 0px 0.5px; 
+            background: #101010;
+            color: #303030;
+            margin: 2px; text-align: center;
+            text-decoration: none; 
+            width: 24px; height: 24px;
+                -webkit-text-shadow: 0px 0px 0px transparent;
+                text-shadow: 0px 0px 0px  transparent;}
+
+
+.favs a:hover   {   background: #e6e6e6;
+                    -moz-transition: 0.8s ease-out;
+                    -webkit-transition: 0.8s ease-out;}  
+                    
+.favs a span    {   position: relative; 
+                    top: 30%;}
+                
+                    
+.favs a:hover:nth-child(4n+1) { color: #8A53B1;}
+.favs a:hover:nth-child(4n+2) { color: #DD43D9;}
+.favs a:hover:nth-child(4n+3) { color: #D9C447;}
+.favs a:hover:nth-child(4n+4) { color: #A29E57;} 
 div#banner{
 margin:1px;
 left:450px;
@@ -278,9 +279,9 @@ top:40px;
 float:left;
 position:fixed;
 z-index:9999;
-width:460px;
+width:459px;
 height:160px;
-background:white;
+background:#1b1b1b;
 }
        
 /*---------------------------- P O S T S ----------------------------*/        
@@ -292,8 +293,7 @@ padding:3px;
 margin:2px;
 margin-bottom:1px;
 float:left;
-background-color:#fff;
-border:1px solid #d6d6d6;
+background-color: #2b2b2b;
 -webkit-transition:all 0.9s ease-out;
 -moz-transition:all 0.9s ease-out;
 transition: all 0.9s ease-out;
@@ -303,8 +303,6 @@ margin-left: 3px;
 margin-top:5px;
 width: 440px; 
 padding:3px;
-background-color:#fff;
-border:1px solid #d6d6d6;
 height: auto; 
 {/block:PermalinkPage}
 }
@@ -452,54 +450,88 @@ a.navi4:hover{background:#fff; color:#846870;}
 /*-------------------- C U S T O M  C O L O R S --------------------*/
  
 h1{
-background: #d9d9d9;
-font-weight:  normal !important;
-font-family: ronda;
-line-height: 5px;
-font-size: 10px;
-color: #888888;
-padding:  3px;
-margin: 0px;
-margin-left:1px;
-border-radius:30px;
--webkit-text-shadow: 0px 0px 2px #fff; text-shadow: 0px 0px 2px  #fff;
+font-family:pixel;
+color: #444444;
+text-shadow:0px 0px 1px #eee;
+font-weight: normal;
+border-top-right-radius:10px;
+font-style:normal;
+letter-spacing: 3px;
+font-size: 8px;
+text-align: left;
+line-height: 8px;
+padding-left: 8px;
+padding-top:1px;
+background:#FF47A3;
+margin:1px;
+margin-bottom:2px;
 }
 
-    
-}
-h2, h3, h4{
-font-family:century gothic;
-font-size:20px;
-line-height:16px;
-font-weight:normal;
-letter-spacing:-2px;
-text-align:left;
-text-transform: uppercase;
-border-radius:5px;
-padding:0px;
-margin:0px;
-margin-top:-2px;
-background: white;
-border-bottom: 1px solid #ddd;
+h1{border-bottom: 1px solid #FF47A3;border-left:2px solid #FF91C8;border-right: 2px solid #FF47A3;}
+
+
+h2{
+font-family:pixel;
+color: #444444;
+text-shadow:0px 0px 1px #eee;
+font-weight: normal;
+border-top-right-radius:10px;
+font-style:normal;
+letter-spacing: 3px;
+font-size: 8px;
+text-align: left;
+line-height: 8px;
+padding-left: 8px;
+padding-top:1px;
+background:#ffb963;
+margin:1px;
+margin-bottom:2px;
 }
 
-h1:first-letter{color:#aaced5;}
-h2:first-letter{color:#b8aeb1;}
-h3:first-letter{color:#d97ea5;}
-h4:first-letter{color:#846870;}
+h3{
+font-family:pixel;
+color: #444444;
+text-shadow:0px 0px 1px #eee;
+font-weight: normal;
+border-top-right-radius:10px;
+font-style:normal;
+letter-spacing: 3px;
+font-size: 8px;
+text-align: left;
+line-height: 8px;
+padding-left: 8px;
+padding-top:1px;
+background:#c1db40;
+margin:1px;
+margin-bottom:2px;   
+}
+
+h4{
+font-family:pixel;
+color: #444444;
+text-shadow:0px 0px 1px #eee;
+font-weight: normal;
+border-top-right-radius:10px;
+font-style:normal;
+letter-spacing: 3px;
+font-size: 8px;
+text-align: left;
+line-height: 8px;
+padding-left: 8px;
+padding-top:1px;
+background:#4d8eff;
+margin:1px;
+margin-bottom:2px;    
+}
+
+
  
- 
-r{color:#aaced5;font-family:pixel;font-size:8px;font-style:normal;
-font-weight:normal;text-transform:lowercase;}
- 
-o{color:#b8aeb1;font-family:pixel;font-size:8px;font-style:normal;
-text-decoration:none;text-transform:lowercase;}
- 
-s{color:#d97ea5;font-family:pixel;font-style:normal;font-size:8px;
-text-decoration: none;text-transform:lowercase;}
- 
-c{color:#846870;font-family:pixel;font-size:8px;font-style:normal;
-text-decoration:none;text-transform:lowercase;}
+
+b, strong   {font-weight: normal; font-size: 10px;}
+        b:nth-child(5n+4)  {color:#FF47A3 !important;}   
+        b:nth-child(5n+3) {color: #ffb963 !important;}   
+        b:nth-child(5n+2) {color: #c1db40 !important;}   
+        b:nth-child(5n+1) {color: #4d8eff !important;}   
  
 /*------------------------ Q U E S T I O N S ------------------------*/
  
@@ -563,57 +595,47 @@ margin-bottom: 5px!important;
 <br>
  
  
-<div style="background-color:#ececec; border:1px solid #ececec; margin-bottom:4px; padding-top:3px; padding-bottom:3px; padding-left:5px; padding-right:5px; width:138px; margin-top: 4px; ">
+<div style="background-color:#2b2b2b; border:1px solid #101010; margin-bottom:4px; padding-top:3px; padding-bottom:3px; padding-left:5px; padding-right:5px; width:140px; margin-top: 4px; ">
 
 <h1>About me</h1>
 <r>Hello!</r> Type here whatever you <o>want</o>, you can <s>edit</s> this theme as much as you want but <c>do not</c> remove the credit. No placing in faq <r>either</r>, it must be <o>visible</o>.
 </div><br>
  
  
-<div style="background-color:#ececec; border:1px solid #ececec; margin-bottom:4px; padding-top:3px; padding-bottom:3px; padding-left:5px; padding-right:5px; width:138px; margin-top: 4px; ">
+ 
+<div style="background-color:#2b2b2b; border:1px solid #101010; margin-bottom:4px; padding-top:3px; padding-bottom:3px; padding-left:5px; padding-right:5px; width:140px; margin-top: 4px; ">
 <h2>Likes/dislikes</h2>    
 <r>Hello!</r> Type here whatever you <o>want</o>, you can <s>edit</s> this theme as much as you want but <c>do not</c> remove the credit. No placing in faq <r>either</r>, it must be <o>visible</o>.
 </div><br>
  
- 
-<div style="margin: 3px; padding: 3px; border: 1px dashed #ddd; background: #efefef; border-radius:5px;">
-<h3>Navigate</h3>
-<table width="100%" cellpadding="1" cellspacing="0" border="0">
-<tr><td width="50%" valign="top">
-<a class="navi1" href="/">Refresh</a>
-<a class="navi2" href="/ask">Message</a>
-<a class="navi3" href="/">Link</a>
-<a class="navi4" href="/">Link</a>
-</td><td width="50%" valign="top">
-<a class="navi1" href="/">Link</a>
-<a class="navi2" href="/ask">Link</a>
-<a class="navi3" href="/">Link</a>
-<a class="navi4" href="http://candygirlthemes.tumblr.com/">credit</a>
-</td></tr></table>
-</div><br>
+
+<br> 
  
  
- 
-<div style="margin: 3px; padding: 3px; border: 1px dashed #ddd; background: #efefef; border-radius:5px;">
-<h4>Babes</h4>
-<center>
-<a href="/" class="fave1" title="fave name">01</a>
-<a href="/" class="fave2" title="fave name">02</a>
-<a href="/" class="fave3" title="fave name">03</a>
-<a href="/" class="fave4" title="fave name">04</a>
-<a href="/" class="fave1" title="fave name">05</a>
-<a href="/" class="fave2" title="fave name">06</a>
-<a href="/" class="fave3" title="fave name">07</a>
-<a href="/" class="fave4" title="fave name">08</a>
-<a href="/" class="fave1" title="fave name">09</a>
-<a href="/" class="fave2" title="fave name">10</a>
-<a href="/" class="fave3" title="fave name">11</a>
-<a href="/" class="fave4" title="fave name">12</a>
-</center></div><br>
- 
- 
- 
-<div style="margin: 3px; padding: 3px; border: 1px dashed #ddd; background: #efefef; border-radius:5px;">
+
+<fieldset>
+<legend></legend>
+<div class="favs"
+<a title="" href=""><span>01</span></a>
+<a title="" href=""><span>02</span></a>
+<a title="" href=""><span>03</span></a>
+<a title="" href=""><span>04</span></a>
+<a title="" href=""><span>05</span></a>
+<a title="" href=""><span>06</span></a>
+<a title="" href=""><span>07</span></a>
+<a title="" href=""><span>08</span></a>
+<a title="" href=""><span>09</span></a>
+<a title="" href=""><span>10</span></a>
+<a title="" href=""><span>11</span></a>
+<a title="" href=""><span>12</span></a>
+
+    </div>
+    </fieldset>
+        
+        <br>
+
+
+<div style="background-color:#2b2b2b; border:1px solid #101010; margin-bottom:4px; padding-top:3px; padding-bottom:3px; padding-left:5px; padding-right:5px; width:140px; margin-top: 4px; ">
 <h1>Stats & music</h1>  
 <center>
 <r>Online:</r><br>

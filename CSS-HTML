@@ -1,10 +1,6 @@
- <!--
-THEME BY VALERIA @girlyfierce.tumblr.com
-CREDIT GOES TO: CANDYGIRLTHEMES.TUMBLR.COM
-DO NOT REMOVE THE CREDIT OR DISTRIBUTE ANY OF THIS CODE
--->
- 
- 
+<!------************Edited by ZAHREA @ GIRLYSMOOCH**********----->
+<!------************Created by VALERIA @ CANDYGIRLTHEMES**********----->
+<!------**********RESOURCES FROM SUGARSMACK & CANDYGIRLTHEMES********----->
 <head>
  
  
@@ -174,6 +170,9 @@ transition: all 0.5s ease-out;
 -moz-transition: all 0.5s ease-out;
 }
  
+li{
+list-style-image:url('http://i.imgur.com/eyXQgAE.png');    
+} 
  
 div#center{
 margin:auto;
@@ -230,7 +229,8 @@ a.z2, a.z2:link, a.z2:active, a.z2:visited,
 a.z3, a.z3:link, a.z3:active, a.z3:visited,
 a.z4, a.z4:link, a.z4:active, a.z4:visited,
 a.z5, a.z5:link, a.z5:active, a.z5:visited{
-display: inline-block; margin-left: 3px; margin-bottom: 2px; font:8px pixel; width:40px; line-height:24px; padding:2px 0.5px; text-align:center; color: #333333; -moz-transition: 0.8s ease-out; -webkit-transition: 0.8s ease-out;}
+display: inline-block; margin-left: 0px; margin-bottom: 2px; font:8px pixel; width:20px; line-height:15px; padding:2px 0.5px; text-align: right; color: #333; -moz-transition: 0.8s ease-out; -webkit-transition: 0.8s ease-out;}
+
 
 a.z1, a.z1:link, a.z1:active, a.z1:visited{background-color: #f27995;}
 a.z2, a.z2:link, a.z2:active, a.z2:visited{background-color: #fa8c75;}
@@ -238,7 +238,7 @@ a.z3, a.z3:link, a.z3:active, a.z3:visited{background-color: #dbc36b;}
 a.z4, a.z4:link, a.z4:active, a.z4:visited{background-color: #b7cf91;}
 a.z5, a.z5:link, a.z5:active, a.z5:visited{background-color: #82cfb5;}
 
-a.z1:hover{color:#f27995; background: #222222;}
+a.z1:hover{color:#z27995; background: #222222;}
 a.z2:hover{color:#fa8c75; background: #222222;}
 a.z3:hover{color:#dbc36b; background: #222222;}
 a.z4:hover{color:#b7cf91; background: #222222;}
@@ -301,6 +301,7 @@ width: 440px;
             -moz-transition: 0.8s ease-out;
             -webkit-transition: 0.8s ease-out;
             color: #808080;
+            border-radius:25px;
             opacity: 0;
 
 
@@ -320,13 +321,13 @@ width: 440px;
 }  
 
 
-.entry .reblog2 a:hover {color: #eee !important; background: #2b2b2b;} 
+.entry .reblog a:hover {color: #ddd !important; background: #2b2b2b;} 
 
- .reblog2  a span    {   position: relative; top: 30%; }     
+ .reblog  a span    {   position: relative; top: 30%; }     
  
  
 
-#entry:nth-child(5n+5)  .reblog a{background: #f27995 !important;;}   
+#entry:nth-child(5n+5)  .reblog a{background: #z27995 !important;;}   
 #entry:nth-child(5n+4)  .reblog a{background: #fa8c75 !important;;}   
 #entry:nth-child(5n+3)  .reblog a{background: #dbc36b !important;;}   
 #entry:nth-child(5n+2)  .reblog a{background: #b7cf91 !important;;}   
@@ -334,43 +335,32 @@ width: 440px;
  
  
 .perma{
-position: absolute; 
-            bottom: 4px;
-            opacity: 0 !important;
-            z-index: 8 !important;
-                        -moz-transition: 0.8s ease-out;
-                        -webkit-transition: 0.8s ease-out;
-             background: #3D382E;
-                color: #574z41;
-                text-transform: lowercase;
-            padding:2px 10px;
-            font: 10px/8px "pixel";
+width:  100%;
+                   
+                                -moz-transition: 0.8s ease-out;
+            -webkit-transition: 0.8s ease-out;
+            transition: 0.8s ease-out;
+            font: 8px pixel;
+            text-align: center;
+            padding: .5px;
+            padding-right: 0px;
+            color: #808080;
+            
     
 }
  
 .perma a{
-font-family:"pixel";
-font-size:8px;
-line-height:6px;
-color:#999;
-text-transform:uppercase;
-text-align:left;
-font-weight:normal; font-style:none;
-margin:0px;
-transition: all 0.5s ease-out;
--o-transition-transition: all 0.5s ease-out;
--webkit-transition: all 0.5s ease-out;
--moz-transition: all 0.5s ease-out;}
+padding: 5px 5px; display: block; float: right; margin: 5px; margin-bottom: 0px; color: #3d3d3d; background:#2b2b2b2; border:1px solid #222222;}
  
 .perma a:hover{
-text-shadow:0px 0px 2px #aaced5;
-transition: all 0.5s ease-out;
--o-transition-transition: all 0.5s ease-out;
--webkit-transition: all 0.5s ease-out;
--moz-transition: all 0.5s ease-out;
+color: #303030 !important;
 }
 
-
+#entry:nth-child(5n+5) .perma a:hover {background: #z27995;}   
+#entry:nth-child(5n+4) .perma a:hover {background: #fa8c75;}   
+#entry:nth-child(5n+3) .perma a:hover {background: #dbc36b;}   
+#entry:nth-child(5n+2) .perma a:hover {background: #b7cf91;}   
+#entry:nth-child(5n+1) .perma a:hover {background: #82cfb5;} 
  
 .title{
 font-family:century gothic;
@@ -405,29 +395,73 @@ color:#ddd;
 transition:all 0.6s ease-out;}
  
 /*----------------------- N A V I G A T I O N ---------------------*/
+
+      	
+	#navigation	{	position: fixed;
+					width: 30px;
+					padding: 10px 0px;
+                    margin-left: -34px;
+                    margin-top: -10px;
+					z-index: 99999999999999 !important;
+				}
+				
+
  
-a.navi1, .navi2, .navi3, .navi4{
-display:block;
-font-family:pixel;
-font-size:8px;
-line-height:10px;
-font-style: normal;
-background-color:#ddd;
+
+    		a.nav, a.nav2, a.nav3, a.nav4 { background: #1b1b1b;
+margin-left: 10px;
+display: block;
+position: relative;
+font-family: pixel;
+font-size: 10px;
+line-height: 8px;
+text-decoration: none;
+text-transform: lowercase;
+color: #404040;
+width: 15px;
+height: 60px;
+margin-top: 10px;
+letter-spacing: 0px;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+border-left: 3px solid #404040;
+-moz-transition: 0.8s ease-out;
+-webkit-transition: 0.8s ease-out;
 text-align: center;
-margin-top:1px;
-margin-right:1px;
-text-transform:uppercase;
-padding:2px;
-font-weight: normal;
-width:auto;
-border-radius:3px;
--webkit-transition: all 0.4s ease-out;
+-webkit-box-shadow: 0px 0px 0px 3px #1b1b1b;
+box-shadow: 0px 0px 0px 3px #1b1b1b;
+text-align: center;
 }
 
-a.navi1:hover{background:#fff; color:#aaced5;}
-a.navi2:hover{background:#fff; color:#b8aeb1;}
-a.navi3:hover{background:#fff; color:#d97ea5;}
-a.navi4:hover{background:#fff; color:#846870;}
+a.nav span, a.nav2 span, a.nav3 span, a.nav4 span	 {
+display: block;
+position: relative;
+top: 54%;
+left: 10%;
+-webkit-transform: rotate(270deg);
+-moz-transform: rotate(270deg);
+-o-transform: rotate(270deg);
+writing-mode: lr-tb;
+																}
+a.nav:hover {border-left: 3px solid #008C9E !important; color: #008C9E !important;}
+a.nav2:hover {border-left: 3px solid #00B4CC !important; color: #00B4CC !important;}
+a.nav3:hover {border-left: 3px solid #00DFFC !important; color: #00DFFC !important;}
+a.nav4:hover {border-left: 3px solid #e6e6e6 !important; color: #e6e6e6 !important;}
+
+
+
+
+    
+
+
+#navigate a:nth-child(5n+1) { border-color: #494773;}
+#navigate a:nth-child(5n+2) { border-color: #7C6FA6;}
+#navigate a:nth-child(5n+3) { border-color: #FF57B6;}
+#navigate a:nth-child(5n+4) { border-color: #FF8ACC;}
+#navigate a:nth-child(5n+5) { border-color: #998FB9;}
+
+ 
+
  
 /*-------------------- C U S T O M  C O L O R S --------------------*/
 h1,h2,h3,h4,h5{
@@ -504,7 +538,7 @@ padding-bottom:2px;}
                     -moz-transition: 0.8s ease-out;
             -webkit-transition: 0.8s ease-out;}
 
-#entry:nth-child(5n+5)  blockquote {color: #f27995 !important;}   
+#entry:nth-child(5n+5)  blockquote {color: #z27995 !important;}   
 #entry:nth-child(5n+4)  blockquote {color: #fa8c75 !important;}   
 #entry:nth-child(5n+3)  blockquote {color: #dbc36b !important;}   
 #entry:nth-child(5n+2)  blockquote {color: #b7cf91 !important;}   
@@ -537,83 +571,68 @@ margin-bottom: 5px!important;
  
 <body>
  
- 
+<div id="navigation">
+    <a class="nav" href="http://{name}.tumblr.com"><span>Refresh</span></a>
+<a class="nav2" href="http://{name}.tumblr.com/ask"><span>Message</span></a>
+<a class="nav3" href="http://{name}.tumblr.com/tagged/personal"><span>Personal</span></a>
+<a class="nav4" href="http://{name}.tumblr.com/archive"><span>Archive</span></a>
+<a class="nav" href=""><span>Linkity</span></a>
+<a class="nav2" href="http://sugarsmack.net" target="_blank"><span>Theme</span></a>
+    </div>
+  
  
 <div id="sidebar">
  
+<img src="http://i.imgur.com/srbScqW.gif" style="width: 140px;padding:4px; background-color:#222222; border: 1px solid #2b2b2b; margin-bottom: 6px;">
  
-<div style="margin: 3px; padding: 3px; border: 1px solid #2b2b2b; background: #222222;">
-<img style="width:136px;" src="http://31.media.tumblr.com/105ae8891cfbf10be88797ec6004fc91/tumblr_mm6886NAE11qamsrbo1_500.gif"></a></div>
-<br>
+ 
  
 <div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; width:140px; margin-top: 2px; ">
 
 <h1>About me</h1>
-<r>Hello!</r> Type here whatever you <o>want</o>, you can <s>edit</s> this theme as much as you want but <c>do not</c> remove the credit. No placing in faq <r>either</r>, it must be <o>visible</o>.
+Hola lovelies, I'm Zahrea but most people just call me Rea. I live on St. Kitts, a beautiful Caribbean island. 
 </div><br>
  
  
  
 <div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; width:140px; margin-top:2px; ">
 <h2>Likes</h2>    
-Hello. The quick fox jumped over the lazy dog.Hello. The quick fox jumped over the lazy dog.Hello. The quick fox jumped over the lazy dog.Hello. The quick fox jumped over the lazy dog
+makeup flowers forever21 antm bbw jewelry music victoria secret animals pll singing nail polish fashion pink
 </div><br>
  
 <div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; width:140px; margin-top:2px; ">
 
 <h3>Dislikes</h3>
-<b>Hello</b> Hello. The quick fox jumped over the lazy dog.Hello. The quick fox jumped over the lazy dog.Hello. The quick fox jumped over the lazy dog.Hello. The quick fox jumped over the lazy dog
+lying fakes selfish persons bugs lizards being sick heartbreak boredom being alone pervs
 </div><br>
       <!---FAVES--->
-<div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px;">
+<div style="background-color:#222222; border:1px solid #2b2b2b; margin-bottom:6px; padding:4px; ">
 <h4>Faves</h4>
-<a title="alertmonroe" href="http://alertmonroe.tumblr.com" target="_blank" class="z1">01</a>
-
-<a title="s0uthernkissed" href="http://s0uthernkissed.tumblr.com" target="_blank" class="z2">02</a>
-
-<a title="kissedcurls" href="http://kissedcurls.tumblr.com"  target="_blank" class="z3">03</a>
-
-<a title="sinsofbitches" href="http://sinsofbitches.tumblr.com" target="_blank" class="z4">04</a>
-
-<a title="caramelbronze" href="http://caramelbronze.tumblr.com" target="_blank" class="z5">05</a>
-
-<a title="leopardkiss" href="http://leopardkiss.tumblr.com" target="_blank" class="z1">06</a>
-
-<a title="coladablast" href="http://coladablast.tumblr.com" target="_blank" class="z1">07</a>
-
-<a title="murderousallure" href="http://murderousallure.tumblr.com" target="_blank" class="z2">08</a>
-
-<a title="" href="http://.tumblr.com" target="_blank" class="z3">09</a>
-
-<a title="" href="http://.tumblr.com" target="_blank" class="z4">10</a>
-
-<a title="" href="http://.tumblr.com" target="_blank" class="z5">11</a>
-
-<a title="" href="/" target="_blank" class="z1">12</a>
+<a title="kissedcurls" href="http://kissedcurls.tumblr.com" target="_blank" class="z1">01</a>
+<a title="absolutemodel" href="http://absolutemodel.tumblr.com" target="_blank" class="z2">02</a>
+<a title="wepr0mised" href="http://wepr0mised.tumblr.com" target="_blank" class="z3">03</a>
+<a title="blissful-bl0nde" href="http://blissful-bl0nde.tumblr.com" target="_blank" class="z4">04</a>
+<a title="fairyt0ld" href="http://fairyt0ld.tumblr.com" target="_blank" class="z5">05</a>
+<a title="danitylust" href="http://danitylust.tumblr.com" target="_blank" class="z1">06</a>
+<a title="sugarsmackme" href="http://sugarsmackme.tumblr.com" target="_blank" class="z2">07</a>
+<a title="sinissexy" href="http://sinissexy.tumblr.com" target="_blank" class="z1">08</a>
+<a title="abigailmaxinee" href="http://abigailmaxinee.tumblr.com" target="_blank" class="z2">09</a>
+<a title="leopardkiss" href="http://leopardkiss.tumblr.com" target="_blank" class="z3">10</a>
+<a title="wishlace" href="http://wishlace.tumblr.com" target="_blank" class="z4">11</a>
+<a title="blondescandal" href="http://blondescandal.tumblr.com" target="_blank" class="z5">12</a>
 </div>
+
 
  
 
         <br>
+<div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; width:auto; margin-top:2px; ">
+<h5>Stats</h5>   
+<b>Here</b>:  24 + 423321    
+</div>
 
 
-<div style="background-color:#2b2b2b; border:1px solid #101010; margin-bottom:4px; padding-top:3px; padding-bottom:3px; padding-left:5px; padding-right:5px; width:140px; margin-top: 4px; ">
-<h5>Stats & music</h5>  
-<center>
-<r>Online:</r><br>
-<o>Offline:</o><br>
-<s>Blogging since:</s><br>
-<c>Tracking:</c><br>
 <br>
- 
-<object type="application/x-shockwave-flash" data="http://flash-mp3-player.net/medias/player_mp3_multi.swf" width="100" height="20">
-    <param name="movie" value="http://flash-mp3-player.net/medias/player_mp3_multi.swf" />
-    <param name="bgcolor" value="#z3z3z3" />
-    <param name="FlashVars" value="&amp;width=100&amp;height=20&amp;autoplay=1&amp;loop=1&amp;showslider=0&amp;skin=http%3A//i.imgur.com/j6GZcJK.jpg&amp;buttoncolor=d97ea5&amp;buttonovercolor=b8aeb1" />
-</object>
- 
-</center>
-</div><br>
  
  
  
@@ -638,8 +657,12 @@ Hello. The quick fox jumped over the lazy dog.Hello. The quick fox jumped over t
 {block:Title}<span class="title">{Title}</span>{/block:Title}
 <span class="entrytext">{Body}</span>
 <div class="perma">
-{Month} {DayOfMonth}, {Year} / <a href="{ReblogURL}">REBLOG</a></div>{/block:indexpage}
+ <a href="{ReblogUrl}">{NoteCountWithLabel}</a> <a href="{ReblogUrl}">Reblog</a> </div>{/block:IndexPage}
 {/block:Text}
+ 
+
+ 
+ 
  
 {block:Link}
 <a href="{URL}" class="link">{Name}</a>
@@ -689,7 +712,7 @@ Hello. The quick fox jumped over the lazy dog.Hello. The quick fox jumped over t
  
 {block:Photo}
 <div class="entry">
-<div class="reblog"><a href="{ReblogURL}">Reblog</a> / <a href="{Permalink}">{NoteCount} notes</a></div>  {/block:IndexPage}
+<div class="reblog"><a href="{ReblogURL}">Reblog</a> <br> <a href="{Permalink}">{NoteCount} notes</a></div>  {/block:IndexPage}
 <a class="linkopacity" href="{ReblogURL}"><img src="{PhotoURL-500}" width="140px"/></a></div>{/block:Photo}
  
 {block:Photoset}{block:IndexPage}{block:Photos}<img src="{PhotoURL-250}" style="width: 66px; margin: 2px; float: left;"> {/block:Photos}{/block:IndexPage}{block:PermalinkPage}{Photoset-500}{/block:PermalinkPage}{block:Caption}{/block:Caption}{block:indexpage}<div class="perma">
@@ -713,4 +736,5 @@ Hello. The quick fox jumped over the lazy dog.Hello. The quick fox jumped over t
 </div></div>
  
  
+
 </div></body></body></html>

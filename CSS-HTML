@@ -1,4 +1,4 @@
-<!--
+ <!--
 THEME BY VALERIA @girlyfierce.tumblr.com
 CREDIT GOES TO: CANDYGIRLTHEMES.TUMBLR.COM
 DO NOT REMOVE THE CREDIT OR DISTRIBUTE ANY OF THIS CODE
@@ -149,7 +149,7 @@ a:hover{cursor:url(http://img69.imageshack.us/img69/7673/cursorw.png), progress;
  
  
  
-body	{	margin: 0px;
+body{	margin: 0px;
 			padding: 0px;
 			background: url(http://static.tumblr.com/lvxiwhj/XIZn4yl18/bg.png) repeat top center fixed;
 			font:10px ronda;
@@ -292,45 +292,46 @@ height: auto;
 width: 440px; 
 {/block:PermalinkPage}
 } 
- 
+
 .entry .reblog {
-opacity: 0;
-position: absolute;
-bottom: 100px;
-left: 10px;
-width: auto;
-padding: 5px;
-font-family: "04b24";
-font-size: 8px;
-line-height: 8px;
-text-align: center;
-text-transform: uppercase;
-background: #fff;
-border-radius:3px;
-letter-spacing: 0px;
-z-index:1;
--webkit-transition: all 0.7s ease;
--moz-transition: all 0.7s ease;
--o-transition: all 0.7s ease;
+             position: absolute;
+            top: 10px; width: 40px;
+            left: 90px;
+            text-align: center !important;
+            -moz-transition: 0.8s ease-out;
+            -webkit-transition: 0.8s ease-out;
+            color: #808080;
+            opacity: 0;
+
+
 }
-.entry:hover .reblog {
-opacity: .7;
-bottom:10px;
-{block:PermalinkPage}
-opacity: 0.0;
-{/block:PermalinkPage}
-}
+
+
+.entry:hover .reblog {   position: absolute; 
+                        top: 10px;
+                        left: 90px;
+                        z-index: 9 !important;
+                        color:#eee;
+                        opacity: 1 !important;
+                        padding-top: 0px !important;
+                        } 
+
+ .reblog a { padding:  3px; display: block;background: #2b2b2b; color:#222222;
+}  
+
+
+.entry .reblog2 a:hover {color: #eee !important; background: #2b2b2b;} 
+
+ .reblog2  a span    {   position: relative; top: 30%; }     
  
-.reblog a{
-font-family:"pixel";
-color: #000;
--webkit-transition: all 0.7s ease;
--moz-transition: all 0.7s ease;
--o-transition: all 0.7s ease;
-}
-.reblog a:hover{
-color:#d97ea5;
-}
+ 
+
+#entry:nth-child(5n+5)  .reblog a{background: #f27995 !important;;}   
+#entry:nth-child(5n+4)  .reblog a{background: #fa8c75 !important;;}   
+#entry:nth-child(5n+3)  .reblog a{background: #dbc36b !important;;}   
+#entry:nth-child(5n+2)  .reblog a{background: #b7cf91 !important;;}   
+#entry:nth-child(5n+1)  .reblog a{background: #82cfb5 !important;;}
+ 
  
 .perma{
 position: absolute; 
@@ -368,12 +369,13 @@ transition: all 0.5s ease-out;
 -webkit-transition: all 0.5s ease-out;
 -moz-transition: all 0.5s ease-out;
 }
- 
+
+
  
 .title{
 font-family:century gothic;
 font-size:15px;
-color: #aaced5;
+color: #f27995;
 line-height:16px;
 font-weight:normal;
 letter-spacing:-1px;
@@ -428,25 +430,41 @@ a.navi3:hover{background:#fff; color:#d97ea5;}
 a.navi4:hover{background:#fff; color:#846870;}
  
 /*-------------------- C U S T O M  C O L O R S --------------------*/
-h1,h2 {
+h1,h2,h3,h4,h5{
+height:6px;
+width:148px;
 font-family:pixel;
-color: #6d6d6d;
-font-weight: normal;
-border-bottom: 2px solid #0c0c0c;
-border-left: 15px solid #0c0c0c;
-border-right: 3px solid #0c0c0c;
-text-shadow:0px 0px 1px #000;
-font-style:normal;
-letter-spacing: 3px;
-font-size: 8px;
-text-align: left;
-line-height: 7px;
-padding-left: 2px;
-background-image:url(http://i.imgur.com/Vmhrfeo.png);
-margin:1px;
+font-size:8px;
+font-weight:normal;
+padding-left:2px;
+padding-top:2px;
+padding-bottom:4px;
+margin-top:-5px;
 margin-bottom:2px;
+margin-left:-5px;
+line-height:10px;
+letter-spacing:2px;
+text-transform:uppercase;
+text-align:center;
+border-top-left-radius:5px;
+border-top-right-radius:5px;
 }
- 
+
+h1{
+background:#f27995; color:#2b2b2b;}
+
+h2{
+background:#fa8c75; color:#2b2b2b;}
+
+h3{
+background:#dbc36b; color:#2b2b2b;}
+
+h4{
+background:#b7cf91; color:#2b2b2b;}
+
+h5{
+background:#82cfb5; color:#2b2b2b;    
+} 
 
 
 b, strong   {font-weight: normal; font-size: 10px;}
@@ -475,13 +493,25 @@ padding-bottom:2px;}
  
 /*-------------------------------------------------------------------*/
  
-blockquote{
-display:block;
-width:120px;
-border: 1px solid #ddd;
-padding: 2px;
-background:#eee;;
-margin-left: 2px;}
+
+ blockquote  {  width: 90%;
+                border: 1px solid #2b2b2b;
+                background: #222222;
+                margin: 0 auto;
+                padding: 4px;
+                margin-top: -5px;
+                margin-bottom: 5px;
+                    -moz-transition: 0.8s ease-out;
+            -webkit-transition: 0.8s ease-out;}
+
+#entry:nth-child(5n+5)  blockquote {color: #f27995 !important;}   
+#entry:nth-child(5n+4)  blockquote {color: #fa8c75 !important;}   
+#entry:nth-child(5n+3)  blockquote {color: #dbc36b !important;}   
+#entry:nth-child(5n+2)  blockquote {color: #b7cf91 !important;}   
+#entry:nth-child(5n+1)  blockquote {color: #82cfb5 !important;}   
+
+            blockquote img  {width: 98%;}
+            blockquote a:hover  {color: #ddd;}
  
 #infscr-loading {
 position: absolute!important;
@@ -512,12 +542,11 @@ margin-bottom: 5px!important;
 <div id="sidebar">
  
  
-<div style="margin: 3px; padding: 3px; border: 1px dashed #ddd; background: #efefef;">
-<img style="width:136px;" src="http://oi43.tinypic.com/2epstbn.jpg"></a></div>
+<div style="margin: 3px; padding: 3px; border: 1px solid #2b2b2b; background: #222222;">
+<img style="width:136px;" src="http://31.media.tumblr.com/105ae8891cfbf10be88797ec6004fc91/tumblr_mm6886NAE11qamsrbo1_500.gif"></a></div>
 <br>
  
- 
-<div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; overflow:hidden;">
+<div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; width:140px; margin-top: 2px; ">
 
 <h1>About me</h1>
 <r>Hello!</r> Type here whatever you <o>want</o>, you can <s>edit</s> this theme as much as you want but <c>do not</c> remove the credit. No placing in faq <r>either</r>, it must be <o>visible</o>.
@@ -525,16 +554,19 @@ margin-bottom: 5px!important;
  
  
  
-<div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; overflow:hidden;">
-<h2>Likes/dislikes</h2>    
-<r>Hello!</r> Type here whatever you <o>want</o>, you can <s>edit</s> this theme as much as you want but <c>do not</c> remove the credit. No placing in faq <r>either</r>, it must be <o>visible</o>.
+<div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; width:140px; margin-top:2px; ">
+<h2>Likes</h2>    
+Hello. The quick fox jumped over the lazy dog.Hello. The quick fox jumped over the lazy dog.Hello. The quick fox jumped over the lazy dog.Hello. The quick fox jumped over the lazy dog
 </div><br>
  
-<br> 
+<div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; width:140px; margin-top:2px; ">
 
+<h3>Dislikes</h3>
+<b>Hello</b> Hello. The quick fox jumped over the lazy dog.Hello. The quick fox jumped over the lazy dog.Hello. The quick fox jumped over the lazy dog.Hello. The quick fox jumped over the lazy dog
+</div><br>
       <!---FAVES--->
-<div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; overflow:hidden;">
-<h1>Faves</h1>
+<div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px;">
+<h4>Faves</h4>
 <a title="alertmonroe" href="http://alertmonroe.tumblr.com" target="_blank" class="z1">01</a>
 
 <a title="s0uthernkissed" href="http://s0uthernkissed.tumblr.com" target="_blank" class="z2">02</a>
@@ -566,7 +598,7 @@ margin-bottom: 5px!important;
 
 
 <div style="background-color:#2b2b2b; border:1px solid #101010; margin-bottom:4px; padding-top:3px; padding-bottom:3px; padding-left:5px; padding-right:5px; width:140px; margin-top: 4px; ">
-<h1>Stats & music</h1>  
+<h5>Stats & music</h5>  
 <center>
 <r>Online:</r><br>
 <o>Offline:</o><br>
@@ -587,8 +619,8 @@ margin-bottom: 5px!important;
  
  
 <div id="banner">
-<div style="margin: 3px; padding: 3px; border: 1px solid #ddd; background: #z3z3z3;">
-<img src="http://i.imgur.com/ZDsVRjt.png"></a>  
+<div style="margin: 3px; padding: 3px; border: 1px solid #2b2b2b; background: #z3z3z3;">
+<img src=""></a>  
 </div></div></div>
    
  
@@ -664,6 +696,7 @@ margin-bottom: 5px!important;
 <a href="{permalink}">{Month} {DayOfMonth}, {Year} / <a href="{ReblogURL}">REBLOG</a></div>
 {/block:indexpage}{/block:Photoset}
  
+
 {block:PostNotes}
 <center>
 {block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}

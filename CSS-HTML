@@ -5,7 +5,7 @@
  
  
  
-<title> Theme Unconditionally </title>
+<title> queen rea dominate </title>
  
 <link rel="shortcut icon" href="">
 
@@ -130,7 +130,8 @@ letter-spacing: 1px;
 /*-------------------- C U S T O M  F O N T S -----------------------*/
  
  
-@font-face {font-family:"pixel"; src:url('http://static.tumblr.com/spzdac4/wiqm8nrs6/sodeliciouss.ttf');}
+@font-face {font-family:'pixel'; src: local('Ernest'), url('http://static.tumblr.com/lvxiwhj/z7Jmm2jwh/ernest.ttf');
+}
 
 @font-face {font-family:""; src:url('');}
  
@@ -144,17 +145,26 @@ body,a{cursor:url(http://img69.imageshack.us/img69/7673/cursorw.png), progress;}
 a:hover{cursor:url(http://img69.imageshack.us/img69/7673/cursorw.png), progress;}
  
  
+body {
+padding: 2px;
+margin: 0px;
+color:#a7a7a7;
+font-family: pixel;
+line-height:9px;
+text-transform:uppercase; 
+letter-spacing:0px; 
+font-weight:normal; 
+font-size:10px;
+background: #222222;
+background-image:url(http://static.tumblr.com/lvxiwhj/XIZn4yl18/bg.png);
+background-attachment: fixed;
+background-repeat: repeat;
+overflow-x: hidden !important;
+z-index: 99999;
+}
  
-body{	margin: 0px;
-			padding: 0px;
-			background: url(http://static.tumblr.com/lvxiwhj/XIZn4yl18/bg.png) repeat top center fixed;
-			font:10px ronda;
-            font-weight: normal;
-            color: #3D3D3D;
-            text-transform: lowercase;
-            overflow-x: hidden !important;
-		}
  
+
 a:active, a:visited, a:link {
 color:#999;
 text-decoration: none;
@@ -229,7 +239,7 @@ a.z2, a.z2:link, a.z2:active, a.z2:visited,
 a.z3, a.z3:link, a.z3:active, a.z3:visited,
 a.z4, a.z4:link, a.z4:active, a.z4:visited,
 a.z5, a.z5:link, a.z5:active, a.z5:visited{
-display: inline-block; margin-left: 0px; margin-bottom: 2px; font:8px pixel; width:20px; line-height:15px; padding:2px 0.5px; text-align: right; color: #333; -moz-transition: 0.8s ease-out; -webkit-transition: 0.8s ease-out;}
+display: inline-block; margin-left: 0px; margin-bottom: 2px; font:10px pixel; width:19px; line-height:15px; padding:2px 0.5px; text-align: right; color: #333; -moz-transition: 0.8s ease-out; -webkit-transition: 0.8s ease-out;}
 
 
 a.z1, a.z1:link, a.z1:active, a.z1:visited{background-color: #f27995;}
@@ -238,7 +248,7 @@ a.z3, a.z3:link, a.z3:active, a.z3:visited{background-color: #dbc36b;}
 a.z4, a.z4:link, a.z4:active, a.z4:visited{background-color: #b7cf91;}
 a.z5, a.z5:link, a.z5:active, a.z5:visited{background-color: #82cfb5;}
 
-a.z1:hover{color:#z27995; background: #222222;}
+a.z1:hover{color:#f27995; background: #222222;}
 a.z2:hover{color:#fa8c75; background: #222222;}
 a.z3:hover{color:#dbc36b; background: #222222;}
 a.z4:hover{color:#b7cf91; background: #222222;}
@@ -327,7 +337,7 @@ width: 440px;
  
  
 
-#entry:nth-child(5n+5)  .reblog a{background: #z27995 !important;;}   
+#entry:nth-child(5n+5)  .reblog a{background: #f27995 !important;;}   
 #entry:nth-child(5n+4)  .reblog a{background: #fa8c75 !important;;}   
 #entry:nth-child(5n+3)  .reblog a{background: #dbc36b !important;;}   
 #entry:nth-child(5n+2)  .reblog a{background: #b7cf91 !important;;}   
@@ -340,7 +350,7 @@ width:  100%;
                                 -moz-transition: 0.8s ease-out;
             -webkit-transition: 0.8s ease-out;
             transition: 0.8s ease-out;
-            font: 8px pixel;
+            font: 10px pixel;
             text-align: center;
             padding: .5px;
             padding-right: 0px;
@@ -350,7 +360,7 @@ width:  100%;
 }
  
 .perma a{
-padding: 5px 5px; display: block; float: right; margin: 5px; margin-bottom: 0px; color: #3d3d3d; background:#2b2b2b2; border:1px solid #222222;}
+padding: 5px 5px; display: block; float: right; margin: 5px; margin-bottom: 0px; color:#828182; background:#2b2b2b2; border:1px solid #222222;}
  
 .perma a:hover{
 color: #303030 !important;
@@ -404,7 +414,7 @@ transition:all 0.6s ease-out;}
                     margin-top: -10px;
 					z-index: 99999999999999 !important;
 				}
-				
+
 
  
 
@@ -468,7 +478,7 @@ h1,h2,h3,h4,h5{
 height:6px;
 width:148px;
 font-family:pixel;
-font-size:8px;
+font-size:10px;
 font-weight:normal;
 padding-left:2px;
 padding-top:2px;
@@ -502,11 +512,20 @@ background:#82cfb5; color:#2b2b2b;
 
 
 b, strong   {font-weight: normal; font-size: 10px;}
-        b:nth-child(5n+4)  {color:#FF47A3 !important;}   
-        b:nth-child(5n+3) {color: #ffb963 !important;}   
-        b:nth-child(5n+2) {color: #c1db40 !important;}   
-        b:nth-child(5n+1) {color: #4d8eff !important;}   
+        b:nth-child(5n+5)  {color:#f27995 !important;}   
+        b:nth-child(5n+4) {color: #fa8c75 !important;}   
+        b:nth-child(5n+3) {color: #dbc36b !important;}   
+        b:nth-child(5n+2) {color: #b7cf91 !important;}
+        b:nth-child(5n+1) {color: #82cfb5 !important;}   
  
+ 
+x{
+color:#fa8c75;    
+} 
+
+g{
+color:#f27995;    
+}
 /*------------------------ Q U E S T I O N S ------------------------*/
  
 .ask{
@@ -560,10 +579,10 @@ margin-bottom: 5px!important;
  
 .port{float: left;margin: 1px 4px 0 0;padding: 2px; background-image:url();}
  
-::-webkit-scrollbar-thumb {background: #444; border:0px solid transparent;}
-::-webkit-scrollbar {width:6px; height:4px; background-image: url(http://i.imgur.com/YNT5IOE.png);}
+::-webkit-scrollbar-thumb {background-image: url(http://i.imgur.com/uJ5wcCP.png);}
+::-webkit-scrollbar {background: #444; border:0px solid transparent; width:6px; height:4px;}
  
- 
+
  
  
 </style>
@@ -589,24 +608,24 @@ margin-bottom: 5px!important;
  
 <div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; width:140px; margin-top: 2px; ">
 
-<h1>About me</h1>
-Hola lovelies, I'm Zahrea but most people just call me Rea. I live on St. Kitts, a beautiful Caribbean island. 
+<h1>THE QUEEN</h1>
+Hola <b>lovelies</b>, I'm Zahrea but most people just call me <b>Rea</b>. I live on St. Kitts, a beautiful <b>Caribbean island</b>. I am currrently 17 years young and I blow out my candles on the <b>October 10th</b>. I am a computer geek, who has an obsession for the color <b>pink</b> anything floral. In another life, I was an international <b>singer</b>.Enjoy my blog anf follow me xoxo rea
 </div><br>
  
  
  
-<div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; width:140px; margin-top:2px; ">
+<div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; width:140px; margin-top:-8px; ">
 <h2>Likes</h2>    
-makeup flowers forever21 antm bbw jewelry music victoria secret animals pll singing nail polish fashion pink
+<b>makeup</b> flowers forever21 <b>pll</b> jewelry<b>victoria secret</b> animals <b>pll</b> nail polish fashion pink
 </div><br>
  
-<div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; width:140px; margin-top:2px; ">
+<div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; width:140px; margin-top:-8px; ">
 
 <h3>Dislikes</h3>
-lying fakes selfish persons bugs lizards being sick heartbreak boredom being alone pervs
+<b>fakes</b> selfish persons bugs <b>lizards</b> being ignored <b>heartbreak</b>
 </div><br>
       <!---FAVES--->
-<div style="background-color:#222222; border:1px solid #2b2b2b; margin-bottom:6px; padding:4px; ">
+<div style="background-color:#222222; border:1px solid #2b2b2b; margin-bottom:6px;margin-top:-8px; padding:4px; ">
 <h4>Faves</h4>
 <a title="kissedcurls" href="http://kissedcurls.tumblr.com" target="_blank" class="z1">01</a>
 <a title="absolutemodel" href="http://absolutemodel.tumblr.com" target="_blank" class="z2">02</a>
@@ -622,20 +641,46 @@ lying fakes selfish persons bugs lizards being sick heartbreak boredom being alo
 <a title="blondescandal" href="http://blondescandal.tumblr.com" target="_blank" class="z5">12</a>
 </div>
 
-
- 
-
         <br>
-<div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; width:auto; margin-top:2px; ">
-<h5>Stats</h5>   
-<b>Here</b>:  24 + 423321    
-</div>
+<div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; width:auto; margin-top:-8px; ">
 
+<h1>FAQs</h1>
+
+<div style="background:#3d3d3d; padding:1px;"><b>Question</b>: Follow Back? </div>
+<div style="background:#222222; padding:1px;"><x>Answer</x>: Same style blogs only </div>
+
+<div style="background:#3d3d3d; padding:1px; padding-top:2px; margin-top:3px; border-top:1px dotted #a7a7a7;"><b>Question</b>: Vote for me/View my blog?</div>
+<div style="background:#222222; padding:1px;"><g>Answer</g>: Sure thing </div>
+
+<div style="background:#3d3d3d; padding:1px; padding-top:2px; margin-top:3px; border-top:1px dotted #a7a7a7;"><b>Question</b>: Follower count?</div>
+<div style="background:#222222; padding:1px;"><x>Answer</x>: 3k and counting </div>
+
+<div style="background:#3d3d3d; padding:1px; padding-top:2px; margin-top:3px; border-top:1px dotted #a7a7a7;"><b>Question</b>: Theme credit</div>
+<div style="background:#222222; padding:1px;"><g>Answer</g>: <a href="http://suqarbliss.tumblr.com/credit"><b>Click here</b> </a>  </div>
+</div> 
+ 
 
 <br>
- 
- 
- 
+
+<div style="background-color:#222222; border:1px solid #222222; margin-bottom:8px; padding:4px; width:auto; margin-top:-8px; ">
+
+<h5>Stats</h5>
+here: <script language="JavaScript"> 
+var ref = (''+document.referrer+'');
+var w_h = window.screen.width + " x " + window.screen.height;
+document.write('<script src="http://s1.freehostedscripts.net/ocounter.php?site=ID4330821&e1=&e2=&r=' + ref + '&wh=' + w_h + '"><\/script>'); 
+</script> + <script language="JavaScript" src="http://freehostedscripts1.net/ocount.php?site=ID1504194&name=left"></script>
+<br>
+tracking: <b>suqarbliss</b>
+<center><object type="application/x-shockwave-flash" data="http://flash-mp3-player.net/medias/player_mp3_multi.swf" width="105" height="25">
+    <param name="movie" value="http://flash-mp3-player.net/medias/player_mp3_multi.swf" />
+    <param name="bgcolor" value="#222222" />
+    <param name="FlashVars" value="mp3=http%3A//k007.kiwi6.com/hotlink/5ffkeuler1/My_Bae.mp3%7Chttp%3A//musicjustfor.me/assets/songs/389000-389999/389641-bang-bang-jessie-j-ariana-grande-nicki-minaj.mp3&amp;width=105&amp;height=25&amp;autoplay=1&amp;showslider=0&amp;loadingcolor=ffffff&amp;bgcolor=222222&amp;bgcolor1=222222&amp;bgcolor2=222222&amp;slidercolor1=ffffff&amp;slidercolor2=ffffff&amp;sliderovercolor=ffffff&amp;buttoncolor=82cfb5&amp;buttonovercolor=f27995" />
+</object> </center>
+
+
+</div>
+
  
 <div id="banner">
 <div style="margin: 3px; padding: 3px; border: 1px solid #2b2b2b; background: #z3z3z3;">

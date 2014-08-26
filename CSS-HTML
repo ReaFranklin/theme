@@ -1148,41 +1148,14 @@ fieldset:nth-child(2n+2) .accent {right: 5px; }
             padding-bottom: 2px;
             border-bottom: 4px solid #ccc; padding-bottom: 10px;}
 
-.ask a  {   color: #FA90FE;  
-{block:ifcoloroption2}
-            color: #5EB81D;
-{/block:ifcoloroption2}
-{block:ifcoloroption3}
-            color: #FFA1FD;
-{/block:ifcoloroption3}
-{block:ifcoloroption4}
-            color: #E6AC6B;
-{/block:ifcoloroption4}
+.ask a  {   color: #f27995;  
             border-radius: 3px;
             letter-spacing: 1px; 
             margin-bottom: 3px;}
             
-.ask a:hover {  color: #DB7AFB; 
-{block:ifcoloroption2}
-                color: #E65AE3;
-{/block:ifcoloroption2}  
-{block:ifcoloroption3}
-                color: #FF82FD;
-{/block:ifcoloroption3}  
-{block:ifcoloroption4}
-                color: #55A2B0;
-{/block:ifcoloroption4}  }
+.ask a:hover {  color: #DB7AFB;}
 
-.ask img    {   border: 2px solid #E29BFA; 
-{block:ifcoloroption2}
-                border-color: #E5AE7C;
-{/block:ifcoloroption2} 
-{block:ifcoloroption3}
-                border-color: #81C9C1;
-{/block:ifcoloroption3}
-{block:ifcoloroption4}
-                border-color: #78B5C0;
-{/block:ifcoloroption4}
+.ask img    {   border: 2px solid #f386a0; 
                 position: relative;
                 float: left; 
                 background: #303030;
@@ -1198,27 +1171,7 @@ a, a:hover, a img, a img:hover {
                 -webkit-transition: 0.8s ease-out;
                 text-decoration: none; }
                 
-a   {  color: #BC97E7;
-{block:ifcoloroption2}
-            color: #E67CE4;
-{/block:ifcoloroption2} 
-{block:ifcoloroption3}
-            color: #74B2AB;
-{/block:ifcoloroption3}  
-{block:ifcoloroption4}
-            color: #3AACC0;
-{/block:ifcoloroption4}  }
-
-a:hover {   color: #A26EDD;
-{block:ifcoloroption2}
-            color: #E65AE3;
-{/block:ifcoloroption2} 
-{block:ifcoloroption3}
-            color: #2EB2A3;
-{/block:ifcoloroption3} 
-{block:ifcoloroption4}
-            color: #2E8999;
-{/block:ifcoloroption4}}
+a   {  color: #;}
         
 blockquote  {   position: relative; 
                 width: 85%;
@@ -1345,14 +1298,11 @@ big {color:  #A26EDD;
     
     <div id="sb">
     <div id="navigate">
-<a title="{text:link1title}" href="{text:link1url}"><span>I</span> 
-{block:ifnavformat2}{text:link1title}{/block:ifnavformat2}
-{block:ifnavformat3}{text:link1title}{/block:ifnavformat3}
+<a title="home" href="/"><span>I</span> 
 </a>
 
 <a title="{text:link2title}" href="{text:link2url}"><span>II</span> 
-{block:ifnavformat2}{text:link2title}{/block:ifnavformat2}
-{block:ifnavformat3}{text:link2title}{/block:ifnavformat3}</a>
+</a>
 
 <a title="{text:link3title}" href="{text:link3url}"><span>III</span> 
 {block:ifnavformat2}{text:link3title}{/block:ifnavformat2}
@@ -1438,18 +1388,14 @@ flowers singing chocolate makeup justin bieber pink forever21 victoria secret pi
 <div style="clear:both;"></div> {/block:ifnofaq}
 
 <fieldset style=" {block:ifnofaq}display: none;{/block:ifnofaq}">
-    <legend>{text:faqtitle}</legend>
+    <legend>FAQs</legend>
         <div id="faq" style="width: 160px; height: 30px; overflow: auto; padding: 4px;"> 
-<span><b>Q</b>: {text:faq001}</span>
-<span><b>A</b>: {text:faq001answer}</span>
-<span><b>Q</b>: {text:faq002}</span>
-<span><b>A</b>: {text:faq002answer}</span>
-<span><b>Q</b>: {text:faq003}</span>
-<span><b>A</b>: {text:faq003answer}</span>
-<span><b>Q</b>: {text:faq004}</span>
-<span><b>A</b>: {text:faq004answer}</span>
-<span><b>Q</b>: {text:faq005}</span>
-<span><b>A</b>: {text:faq005answer}</span>
+<span><b>Q</b>: Follow back?</span>
+<span><b>A</b>: Not on demand hun</span>
+<span><b>Q</b>: Vote for me?/ Check out my blog?</span>
+<span><b>A</b>: Yes and yes</span>
+<span><b>Q</b>: Theme and edit credit</span>
+<span><b>A</b>: Credit is always on my page</span>
         </div>
 <div class="accent"><a><span>.</span></a><a><span>.</span></a><a><span>.</span></a><a><span>.</span></a></div>
 </fieldset>

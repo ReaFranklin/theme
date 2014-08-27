@@ -1,4 +1,4 @@
-    
+
 <!-- 
 
 Reckless -- By Ajey@Sugarsmack.net
@@ -10,6 +10,38 @@ Reckless -- By Ajey@Sugarsmack.net
         
         <html> 
     <head>
+    
+
+<script> 
+$(document).ready(function() { 
+// 
+$('a.poplight[href^=#]').click(function() { 
+var popID = $(this).attr('rel'); //Get Popup Name 
+var popURL = $(this).attr('href'); //Get Popup href to define size 
+var query= popURL.split('?'); 
+var dim= query[1].split('&'); 
+var popWidth = dim[0].split('=')[1]; //Gets the first query string value 
+$('#' + popID).fadeIn().css({ 'width': Number( popWidth ) }).prepend('<a href="#" class="close"><img src="http://i.imgur.com/FMfXkby.png" class="btn_close" title="Close" alt="Close" /></a>'); 
+var popMargTop = ($('#' + popID).height() + 80) / 2; 
+var popMargLeft = ($('#' + popID).width() + 80) / 2; 
+//Apply Margin to Popup 
+$('#' + popID).css({ 
+'margin-top' : -popMargTop,
+'margin-left' : -popMargLeft 
+}); 
+$('body').append('<div id="fade"></div>');
+$('#fade').css({'filter' : 'alpha(opacity=80)'}).fadeIn(); //Fade in the fade layer - .css({'filter' : 'alpha(opacity=80)'}) 
+return false; 
+}); 
+$('a.close, #fade').live('click', function() { 
+$('#fade , .popup_block').fadeOut(function() { 
+$('#fade, a.close').remove(); //fade them both out 
+}); 
+return false; 
+}); 
+}); 
+</script>    
+    
         <title>{title}</title>
         <link rel="shortcut icon" href="{Favicon}">
         {block:Description}  
@@ -256,6 +288,39 @@ body, td, p { font: 10px/8px pixel;}
  
  
  }
+
+
+.popup_block{
+overflow:hidden;
+display: none; /*--hidden by default--*/
+background-color:#fafafa;
+border:3px double #e5e5e5;
+font-size:10px;
+width:100%;
+padding:4px;
+font-size:10px/8px;
+font-family:pixel;
+position: fixed;
+top: 50%; left: 50%;
+z-index: 99999;
+/*--CSS3 Rounded Corners--*/
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;}
+
+img.btn_close {
+float:right;
+margin:0px 0px 0 0;}
+
+*html #fade {
+	position: absolute;
+}
+
+*html .popup_block {
+	position: absolute;
+}
+
+
 
 #bottom     {   position: fixed; 
                 bottom: 0px; 
@@ -1207,27 +1272,9 @@ b, strong, em { color: #808080;
 
 
 
-i { color: #A26EDD;
-{block:ifcoloroption2}
-    color: #E65AE3; 
-{/block:ifcoloroption2}
-{block:ifcoloroption3}
-    color: #2EB2A3; 
-{/block:ifcoloroption3}
-{block:ifcoloroption4}
-                        color: #2E8999; 
-{/block:ifcoloroption4}} 
+f { color: #b7cf91;} 
 
-s {  color: #DB7AFB;
-{block:ifcoloroption2}
-     color: #E6A160; 
-{/block:ifcoloroption2}
-{block:ifcoloroption3}
-    color: #5ACABC; 
-{/block:ifcoloroption3}
-{block:ifcoloroption4}
-                        color: #55A2B0; 
-{/block:ifcoloroption4}} 
+d {  color: #f386a0;} 
 
 u { color: #FA90FE;
 {block:ifcoloroption2}
@@ -1298,31 +1345,28 @@ big {color:  #A26EDD;
     
     <div id="sb">
     <div id="navigate">
+    
 <a title="home" href="/"><span>I</span> 
 </a>
 
-<a title="{text:link2title}" href="{text:link2url}"><span>II</span> 
+<a title="message" href="#?w=350" rel="inbox" class="poplight"><span>III</span>
 </a>
 
-<a title="{text:link3title}" href="{text:link3url}"><span>III</span> 
-{block:ifnavformat2}{text:link3title}{/block:ifnavformat2}
-{block:ifnavformat3}{text:link3title}{/block:ifnavformat3}</a>
+<a title="personal" href="/tagged/personal"><span>III</span> 
+</a>
 
-<a title="{text:link4title}" href="{text:link4url}"><span>IV</span> 
-{block:ifnavformat2}{text:link4title}{/block:ifnavformat2}
-{block:ifnavformat3}{text:link4title}{/block:ifnavformat3}</a>
+<a title="archive" href="/archive"><span>IV</span> 
+</a>
  
-<a title="{text:link5title}" href="{text:link5url}"><span>V</span>  
-{block:ifnavformat2}{text:link5title}{/block:ifnavformat2}
-{block:ifnavformat3}{text:link5title}{/block:ifnavformat3}</a>
+<a title="ectera" href="/more"><span>V</span>  
+</a>
 
-<a title="{text:link6title}" href="{text:link6url}"><span>VI</span>  
-{block:ifnavformat2}{text:link6title}{/block:ifnavformat2}
-{block:ifnavformat3}{text:link6title}{/block:ifnavformat3}</a>
+<a title="theme credit" href="#?w=103" rel="themecred" class="poplight"> <span>VI</span>  
+</a>
     </div>
      
 <img src="http://static.tumblr.com/lvxiwhj/V7smz2zlz/trans.png" 
-style="float:center; margin:0px; border:5px solid #e6e6e6; border-radius:10px; background-image: url('http://33.media.tumblr.com/28beda097af2bb8cdc6f8a7385bee5c7/tumblr_mya4k9T0oq1rbdm12o2_1280.jpg'); background-size: 100px 115px; background-repeat:none">
+style="float:center; margin:0px; border:5px solid #e6e6e6; border-radius:10px; background-image: url('http://33.media.tumblr.com/28beda097af2bb8cdc6f8a7385bee5c7/tumblr_mya4k9T0oq1rbdm12o2_1280.jpg'); background-size: 100px 110px; background-repeat:none">
 
 
 <fieldset STYLE="CLEAR:BOTH;"> <legend>The Queen</legend>
@@ -1390,12 +1434,12 @@ flowers singing chocolate makeup justin bieber pink forever21 victoria secret pi
 <fieldset style=" {block:ifnofaq}display: none;{/block:ifnofaq}">
     <legend>FAQs</legend>
         <div id="faq" style="width: 160px; height: 30px; overflow: auto; padding: 4px;"> 
-<span><b>Q</b>: Follow back?</span>
-<span><b>A</b>: Not on demand hun</span>
-<span><b>Q</b>: Vote for me?/ Check out my blog?</span>
-<span><b>A</b>: Yes and yes</span>
-<span><b>Q</b>: Theme and edit credit</span>
-<span><b>A</b>: Credit is always on my page</span>
+<div style="background:#fff; padding:1px;"><f>Q</f>: Follow back? </div>
+<d>A</d>: Not on demand hun
+<div style="background:#fff; padding:1px;"><f>Q</f>: Vote for me?/ Check out my blog?</div>
+<d>A</d>: Yes and yes
+<div style="background:#fff; padding:1px;"><f>Q</f>: Theme and edit credit</div>
+<span><d>A</d>: Credit is always on my page</span>
         </div>
 <div class="accent"><a><span>.</span></a><a><span>.</span></a><a><span>.</span></a><a><span>.</span></a></div>
 </fieldset>

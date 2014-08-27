@@ -290,6 +290,17 @@ body, td, p { font: 10px/8px pixel;}
  }
 
 
+#bottom{
+float: left; position: fixed; bottom: 20px; right: 20px; background: transparent; padding: 6px;
+text-align: left;
+border: solid 1px #d7d7d7;
+color: #8e8e8e !important;
+width: 120px;
+background-color: #f5f5f5;
+padding: 5px;
+padding-top: 5px;}
+
+
 .popup_block{
 overflow:hidden;
 display: none; /*--hidden by default--*/
@@ -566,7 +577,7 @@ border-right-color: #f3f3f3;
             border-radius: 10px; 
             background: #e6e6e6; 
             padding: 3px;
-            }
+}
             
 #navigate a, .favs a  
         {   display: block; 
@@ -667,52 +678,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
         
         
 #navigate a:hover:nth-child(4n+1), .favs a:hover:nth-child(4n+1)  
-    {   color: #A26EDD;
-{block:ifcoloroption2}  
-        color: #E65AE3 ;
-{/block:ifcoloroption2}
-{block:ifcoloroption3}  
-        color: #2EB2A3 ;
-{/block:ifcoloroption3}
-{block:ifcoloroption4}  
-        color: #2E8999 ;
-{/block:ifcoloroption4}}
+    {   color: #f27995;
+}
 
 #navigate a:hover:nth-child(4n+2), .favs a:hover:nth-child(4n+2)   
-    {   color: #DB7AFB;
-{block:ifcoloroption2}  
-        color: #E6A160 ;
-{/block:ifcoloroption2}
-{block:ifcoloroption3}  
-        color: #5ACABC ;
-{/block:ifcoloroption3}
-{block:ifcoloroption4}  
-        color: #55A2B0 ;
-{/block:ifcoloroption4}}
+    {   color:#2eb2a3;
+}
 
 #navigate a:hover:nth-child(4n+3), .favs a:hover:nth-child(4n+3)   
-    {   color: #FA90FE;
-{block:ifcoloroption2}  
-        color: #ACB82C ;
-{/block:ifcoloroption2}
-{block:ifcoloroption3}  
-        color: #F2A0FD ;
-{/block:ifcoloroption3}
-{block:ifcoloroption4}  
-        color: #ECA559 ;
-{/block:ifcoloroption4}}
+    {   color:#8AB800;
+}
 
 #navigate a:hover:nth-child(4n+4), .favs a:hover:nth-child(4n+4)   
-    {   color: #F85DFE;
-{block:ifcoloroption2}  
-        color: #5EB81D ;
-{/block:ifcoloroption2}
-{block:ifcoloroption3}  
-        color: #FF82FD ;
-{/block:ifcoloroption3}
-{block:ifcoloroption4}  
-        color: #DF933F ;
-{/block:ifcoloroption4}}
+    {   color:#f386a0;
+}
 
     
 #sb fieldset {  background: #e6e6e6; 
@@ -1059,7 +1038,7 @@ fieldset:nth-child(2n+2) .accent {right: 5px; }
 #post:nth-child(4n+3) .reblog2b a:hover , #post:nth-child(4n+3) .reblog2 a:hover {        border-color: #82cfb5;
         }
 
-#post:nth-child(4n+4) .reblog2b a:hover , #post:nth-child(4n+4) .reblog2 a:hover {        border-color:#b7cf91;
+#post:nth-child(4n+4) .reblog2b a:hover , #post:nth-child(4n+4) .reblog2 a:hover {        border-color:#99CC00;
         }
 
 #post:hover .reblog2 {  top: 0px;
@@ -1236,13 +1215,13 @@ a, a:hover, a img, a img:hover {
                 -webkit-transition: 0.8s ease-out;
                 text-decoration: none; }
                 
-a   {  color: #;}
+a   {  color: #82cfb5;}
         
 blockquote  {   position: relative; 
                 width: 85%;
-                background: #303030;
+                background: #d3d3d3;
                 border:  double #808080;
-                color: #f3f3f3 !important;
+                color: #F386A0 !important;
                 margin: 0 auto;
                 margin-top: 5px;
                 margin-bottom: 5px;
@@ -1256,58 +1235,17 @@ blockquote a {  color: #8AB800;
 blockquote a:hover { color: #f386a0 !important; 
 
 
-b, strong, em { color: #808080; 
-                font-weight: normal; 
-                letter-spacing: 2px;}
-
-#sb b { font-weight: normal; }
-
-#sb b:nth-child(4n+1) { color: #F386A0;}
-
-#sb b:nth-child(4n+2) { color: #FA9883;}
-
-#sb b:nth-child(4n+3) { color: #82cfb5;}
-
-#sb b:nth-child(4n+4) { color: #b7cf91;}
 
 
 
-f { color: #b7cf91;} 
+b, strong   {font-weight: normal; letter-spacing:2px;}
+        b:nth-child(5n+5) {color:#f27995 !important;}   
+        b:nth-child(5n+4) {color:#fa8c75 !important;}   
+        b:nth-child(5n+3) {color:#2eb2a3 !important;}   
+        b:nth-child(5n+2) {color:#8AB800 !important;}   
+        b:nth-child(5n+1) {color:#f386a0 !important;} 
 
-d {  color: #f386a0;} 
 
-u { color: #FA90FE;
-{block:ifcoloroption2}
-    color: #ACB82C; 
-{/block:ifcoloroption2}
-{block:ifcoloroption3}
-    color: #F2A0FD; 
-{/block:ifcoloroption3}
-{block:ifcoloroption4}
-                        color: #ECA559; 
-{/block:ifcoloroption4}} 
-
-small { color: #F85DFE;
-{block:ifcoloroption2}
-        color: #5EB81D; 
-{/block:ifcoloroption2}
-{block:ifcoloroption3}
-    color: #FF82FD; 
-{/block:ifcoloroption3}
-{block:ifcoloroption4}
-                        color: #DF933F; 
-{/block:ifcoloroption4}} 
-
-big {color:  #A26EDD;
-{block:ifcoloroption2}
-    color: #E65AE3; 
-{/block:ifcoloroption2}
-{block:ifcoloroption3}
-    color: #2EB2A3; 
-{/block:ifcoloroption3}
-{block:ifcoloroption4}
-                        color: #2E8999; 
-{/block:ifcoloroption4}
 
 </style>
 
@@ -1323,7 +1261,7 @@ big {color:  #A26EDD;
 </div>
 
     <div id="banner">
-    <img style="{block:ifcoloroption2}display:none;{/block:ifcoloroption2}{block:ifcoloroption3}display:none;{/block:ifcoloroption3}{block:ifcoloroption4}display:none;{/block:ifcoloroption4}{block:ifcustombanner474x120}display:none;{/block:ifcustombanner474x120}" src="http://static.tumblr.com/lvxiwhj/sb0mz1nix/op1banner.png">
+    <img style="{block:ifcoloroption2}display:none;{/block:ifcoloroption2}{block:ifcoloroption3}display:none;{/block:ifcoloroption3}{block:ifcoloroption4}display:none;{/block:ifcoloroption4}{block:ifcustombanner474x120}display:none;{/block:ifcustombanner474x120}" src="http://i.imgur.com/N8s8YXg.gif">
     
 {block:ifcoloroption2}
 <img style="{block:ifcustombanner474x120}display:none;{/block:ifcustombanner474x120}" src="http://static.tumblr.com/lvxiwhj/IYlmz1n68/op2banner.png">
@@ -1349,7 +1287,7 @@ big {color:  #A26EDD;
 <a title="home" href="/"><span>I</span> 
 </a>
 
-<a title="message" href="#?w=350" rel="inbox" class="poplight"><span>III</span>
+<a title="message" href="/ask"><span>III</span>
 </a>
 
 <a title="personal" href="/tagged/personal"><span>III</span> 
@@ -1364,6 +1302,8 @@ big {color:  #A26EDD;
 <a title="theme credit" href="#?w=103" rel="themecred" class="poplight"> <span>VI</span>  
 </a>
     </div>
+
+    
      
 <img src="http://static.tumblr.com/lvxiwhj/V7smz2zlz/trans.png" 
 style="float:center; margin:0px; border:5px solid #e6e6e6; border-radius:10px; background-image: url('http://33.media.tumblr.com/28beda097af2bb8cdc6f8a7385bee5c7/tumblr_mya4k9T0oq1rbdm12o2_1280.jpg'); background-size: 100px 110px; background-repeat:none">
@@ -1373,7 +1313,7 @@ style="float:center; margin:0px; border:5px solid #e6e6e6; border-radius:10px; b
 
          
          <div style="width: 160px; height: 48px; overflow: auto; padding: 5px; line-height:8px;"> 
-    My name is <b>Zahrea</b>. I am currently <b>17 years</b> young but that will change on the <b>Oct 10th</b>. I live in the Caribbean island <b>St. Kitts</b>. basically I'm a pretty <b>awesome</b> person to have around so inbox me let me make you <b>happy</b>
+    My name is <f>Zahrea</f>. I am currently <b>17 years</b> young but that will change on the <b>Oct 10th</b>. I live in the Caribbean island <b>St. Kitts</b>. basically I'm a pretty <b>awesome</b> person to have around so inbox me let me make you <b>happy</b>
              
          </div>
 
@@ -1433,7 +1373,7 @@ flowers singing chocolate makeup justin bieber pink forever21 victoria secret pi
 
 <fieldset style=" {block:ifnofaq}display: none;{/block:ifnofaq}">
     <legend>FAQs</legend>
-        <div id="faq" style="width: 160px; height: 30px; overflow: auto; padding: 4px;"> 
+        <div id="faq" style="width: 160px; height: 100px; overflow: auto; padding: 4px;"> 
 <div style="background:#fff; padding:1px;"><f>Q</f>: Follow back? </div>
 <d>A</d>: Not on demand hun
 <div style="background:#fff; padding:1px;"><f>Q</f>: Vote for me?/ Check out my blog?</div>
@@ -1464,22 +1404,13 @@ flowers singing chocolate makeup justin bieber pink forever21 victoria secret pi
 {/block:iffavsformat3}
 {block:ifcoloroption2}
 {/block:ifcoloroption2}
-<fieldset><legend>Music</legend><center>
-<object type="application/x-shockwave-flash" data="http://flash-mp3-player.net/medias/player_mp3_multi.swf" width="168" height="20">
-    <param name="movie" value="http://flash-mp3-player.net/medias/player_mp3_multi.swf" />
-    <param name="bgcolor" value="#e6e6e6" />
-    <param name="FlashVars" value="mp3={text:songurl}&amp;width=180&amp;autoplay=0&amp;{block:ifautoplay}autoplay=1&amp;{/block:ifautoplay}height=20&amp;volume=75&amp;showslider=1&amp;loadingcolor=FA90FE&amp;{block:ifcoloroption2}loadingcolor=87B764&amp;{/block:ifcoloroption2}{block:ifcoloroption3}loadingcolor=FF82FD&amp;{/block:ifcoloroption3}{block:ifcoloroption4}loadingcolor=E6AC6B&amp;{/block:ifcoloroption4}bgcolor1=e6e6e6&amp;bgcolor2=e6e6e6&amp;buttoncolor=BC97E7&amp;{block:ifcoloroption2}buttoncolor=E67CE4&amp;{/block:ifcoloroption2}{block:ifcoloroption3}buttoncolor=2EB2A3&amp;{/block:ifcoloroption3}{block:ifcoloroption4}buttoncolor=3AACC0&amp;{/block:ifcoloroption4}buttonovercolor=FA90FE&amp;{block:ifcoloroption2}buttonovercolor=5EB81D&amp;{/block:ifcoloroption2}{block:ifcoloroption3}buttonovercolor=FFA1FD&amp;{/block:ifcoloroption3}{block:ifcoloroption4}buttonovercolor=E6AC6B&amp;{/block:ifcoloroption4}showlist=0&amp;showplaylistnumbers=0&amp;slidercolor1=FA90FE&amp;slidercolor2=FA90FE&amp;sliderovercolor=BC97E7&amp;{block:ifcoloroption2}slidercolor1=87B764&amp;slidercolor2=87B764&amp;sliderovercolor=E67CE4{/block:ifcoloroption2}{block:ifcoloroption3}slidercolor1=FF82FD&amp;slidercolor2=FF82FD&amp;sliderovercolor=81C9C1{/block:ifcoloroption3}{block:ifcoloroption4}slidercolor1=E6AC6B&amp;slidercolor2=E6AC6B&amp;sliderovercolor=78B5C0{/block:ifcoloroption4}" />
-</object>
-    <br>
-    <center>{text:stats}</center>
-</center>
-        <div class="accent"><a><span>.</span></a><a><span>.</span></a><a><span>.</span></a><a><span>.</span></a></div>
-</fieldset>
-</fieldset>
+
 
     </div>
          
-        
+<!-------BOTTOM CORNER BOX FOR NETWORKS ETC!------->
+
+<div id="bottom">put anything you want here, networks, etc.</div>        
         
         <div id="content">
 <!--Post Blocking -- Do Not adjust unless you know what you're doing-->
@@ -1680,4 +1611,12 @@ flowers singing chocolate makeup justin bieber pink forever21 victoria secret pi
 
 
     </body>
+    
+
+<div id="inbox" class="popup_block">
+<h4>Send me messages cuties!</h4>
+<iframe frameborder="0" scrolling="no" width="350px" height="250" src="http://www.tumblr.com/ask_form/sugarcrushd.tumblr.com" style="background-color:transparent; overflow:hidden;" id="ask_form">
+
+    
+    
 </html>
